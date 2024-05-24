@@ -1,0 +1,27 @@
+#barra_inicial{
+display: flex;
+flex-direction: row;
+border: 1px solid red;
+}
+
+#titulo{
+border: 1px solid red;
+margin-left: 100px;
+
+}
+
+#acessibilidade{
+display: flex;
+border: 1px solid red;
+height: 50px;
+width: 500px;
+margin-left: 500px;
+margin-right: 57px;
+background-color: #58BDB2 ;
+}
+
+#entrar{
+border: 1px solid red ;
+margin-right: 100px;
+background-color: #58BDB2 ;
+}
