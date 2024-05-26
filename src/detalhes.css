@@ -1,27 +1,225 @@
+/* body{
+    background-image: linear-gradient(to bottom, #d8f0ea,#a9e2dc);
+} */
 #barra_inicial{
-display: flex;
-flex-direction: row;
-border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 1360px;
+    height: 100px;
 }
 
 #titulo{
-border: 1px solid red;
-margin-left: 100px;
-
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 50px;
+    margin-right: 420px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bold; 
+    color: #003832;
 }
 
 #acessibilidade{
-display: flex;
-border: 1px solid red;
-height: 50px;
-width: 500px;
-margin-left: 500px;
-margin-right: 57px;
-background-color: #58BDB2 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #58BDB2;
+    border-radius: 30px;
+    width: 200px;
+    height: 50px;
+    margin-right: 20px;
+
 }
 
-#entrar{
-border: 1px solid red ;
-margin-right: 100px;
-background-color: #58BDB2 ;
+.botao_acessibilidade{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    border-radius: 20px;
+    border: none;
+    background-color: #58BDB2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+}
+
+.botao_acessibilidade:hover{
+    background-color: #003832;
+    transition: 300ms;
+}
+
+#botaoModo_noturno{
+    width: 40px;
+    height: 40px;
+}
+
+#botao_login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #58BDB2;
+    border: none;
+    border-radius: 50px;
+    width: 55px;
+    height: 55px;
+}
+
+#botao_login:hover{
+    background-color: #003832;
+    transition: 300ms;
+}
+
+#imagem_login{
+    width: 35px;
+    height: 35px;
+}
+
+#hr_inicio{
+    border: none;
+    background-color: #286951;
+    width: 1360px;
+    height: 4px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#destaque{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1360px;
+    height: 462px;
+}
+
+#imagem{
+    background-color: #58BDB2;
+    border-radius: 50px;
+    width: 1249px;
+    height: 351px;
+}
+
+#conteudo{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 1360px;
+    height: 1200px;
+}
+
+#titulo_conteudo{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #003832;
+    width: 500px;
+}
+
+#videoConteudo{
+    display: flex;
+    background-color: #58BDB2;
+    border-radius: 50px;
+    width: 1249px;
+    height: 600px;
+    
+}
+
+#textoConteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px;
+    width: 1244px;
+    height: 400px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#BotaoAudio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: none;
+    background-color: #58BDB2;
+    width: 90px;
+    height: 60px;
+}
+
+#BotaoAudio:hover{
+    background-color: #003832;
+    transition: 300ms;
+}
+
+#imagemAudio{
+    width: 40px;
+    height: 40px;
+}
+
+#barra_proximosPassos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    background-color: #58BDB2;
+    width: 1360px;
+    height: 200px;
+}
+
+.passos{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: #9c9c9c;
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 300px;
+    height: 500px;
+    text-decoration: none;
+}
+
+.passos:hover{
+    background-color: #c7c7c7;
+    transition: 300ms;
+}
+
+.titulo_passos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #003832;
+    color: white;
+    border-radius: 20px;
+    width: 200px;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+#passo2{
+    margin-right: 80px;
+
+}
+
+#passo4{
+    margin-left: 80px;
+}
+
+#hr_rodape{
+    border: none;
+    background-color: #286951;
+    width: 1360px;
+    height: 4px;
+    margin-top: 200px;
+    margin-bottom: 0px;
 }
