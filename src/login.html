@@ -1,28 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> 
+    <title>Login Administrador</title> 
     <link rel="stylesheet" href="assets/css/login.css">
     <link rel="stylesheet" href="assets/css/resetLogin.css">
     <script src="assets/js/script.js" defer></script>
 </head>
 <body>
-    <br>
-    <br>
-    <h6>Bem-vindo à página de login para administradores</h6>
-    <div class="login-container">
-        <h2>Login</h2>
-        <form action="/login" method="post">
-          <!-- <input type="email" placeholder="Digite seu email"> -->
-          
-          <input type="text" placeholder="E-mail:" id="email" name="email" required>
-        
-          <input type="password" placeholder="Senha:" id="password" name="password" required>
-          <input type="submit" value="Entrar">
-        </form>
-      </div>
-    
+    <header class="cabecalho-login">
+        <h1>Bem-vindo à página de login para administradores</h1>
+    </header>
+    <main>
+        <div class="login-container">
+            <section class="image-section">
+                <img src="assets/images/img-login-porta-personagem.png" alt="Imagem de Login repesentado por uma ilustração de um personagem entrando em uma porta">
+            </section>
+            <section class="login-section">
+                <h2>Login</h2>
+                <form action="/login" method="post">
+                    
+                    <input type="text" placeholder="E-mail:" id="email" name="email" required>
+                    
+                    <input type="password" placeholder="Senha:" id="password" name="password" required>
+                    <input type="submit" value="Entrar">
+                </form>
+            </section>
+        </div>
+    </main>
 </body>
 </html>
