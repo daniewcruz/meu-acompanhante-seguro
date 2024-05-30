@@ -1,0 +1,221 @@
+body{
+    background-image: url('detalhes_img/WhatsApp\ Image\ 2024-05-29\ at\ 09.28.33.jpeg');
+} 
+
+#barra_inicial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 60px;
+}
+
+#titulo{
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 50px;
+    margin-right: 420px;
+    margin-top: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: bold; 
+    color: #003832;
+}
+
+#acessibilidade{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    background-color: #58BDB2;
+    border-radius: 30px;
+    width: 200px;
+    height: 50px;
+    margin-right: 20px;
+
+}
+
+.botao_acessibilidade{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 20px;
+    border: none;
+    background-color: #58BDB2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+}
+
+.botao_acessibilidade:hover{
+    background-color: #003832;
+    transition: 300ms;
+    color: white;
+}
+
+#botaoModo_noturno{
+    width: 40px;
+    height: 40px;
+}
+
+
+#botao_login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 25%;
+    background-color: #58BDB2;
+    border: none;
+    border-radius: 50px;
+    width: 55px;
+    height: 55px;
+}
+
+#botao_login:hover{
+    background-color: #003832;
+    transition: 300ms;
+}
+
+#imagem_login{
+    width: 35px;
+    height: 35px;
+}
+
+#hr_inicio{
+    border: none;
+    background-color: #286951;
+    height: 4px;
+    margin-top: 20px;
+    margin-bottom: 56px;
+}
+
+#destaque{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#imagem{
+    background-color: #58BDB2;
+    border-radius: 20px;
+    width: 1249px;
+    height: 522px;
+}
+
+
+#titulo_atencaoRiscos{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #003832;
+}
+
+
+#barra_proximosPassos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    background-color: #58BDB2;
+    height: 200px;
+}
+
+.passos{
+    display: flex;
+    background-color: #9c9c9c;
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 360px;
+    height: 500px;
+    text-decoration: none;
+}
+
+.passos:hover{
+    background-color: #c7c7c7;
+    transition: 300ms;
+}
+
+.titulo_passos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #003832;
+    color: white;
+    width: 600px;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin-top: 450px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 7px;
+}
+
+#passo2{
+    margin-right: 80px;
+
+}
+
+#passo4{
+    margin-left: 80px;
+}
+
+#hr_rodape{
+    border: none;
+    background-color: #286951;
+    height: 4px;
+    margin-top: 200px;
+    margin-bottom: 0px;
+}
+
+#rodape{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 320px;
+}
+
+#hospital{
+    margin-left: 50px;
+}
+
+#endereco{
+    margin-left: 120px;
+    margin-right: 80px;
+}
+
+#contato{
+    margin-left: 80px;
+    margin-right: 100px;
+}
+
+
+#conteinerImg{
+    margin-right: 50px;
+}
+
+#logo-senac{
+    width: 150px;
+    height: 90px;
+}
+
+.titulo-footer{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.paragrafo-footer{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 170px;
+}
