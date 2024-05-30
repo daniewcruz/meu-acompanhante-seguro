@@ -127,13 +127,20 @@
 
 #videoConteudo{
     display: flex;
+    justify-items: center;
+    border: 2px solid #58BDB2;
     background-color: #58BDB2;
-    border: 1px solid #58BDB2;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     width: 1249px;
     height: 643px;
     z-index: 7;
+}
+
+#video{
+    border-radius: 20px;
+    width: 1249px;
+    height: 643px 
 }
 
 #textoConteudo{
@@ -185,14 +192,11 @@
     align-items: center;
     margin-top: 200px;
     background-color: #58BDB2;
-
     height: 200px;
 }
 
 .passos{
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
     background-color: #9c9c9c;
     border-radius: 20px;
     margin-top: 20px;
@@ -212,11 +216,14 @@
     align-items: center;
     background-color: #003832;
     color: white;
-    border-radius: 25px;
-    width: 300px;
+    width: 600px;
     height: 50px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
+    margin-top: 450px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 7px;
 }
 
 #passo2{
@@ -232,8 +239,50 @@
 #hr_rodape{
     border: none;
     background-color: #286951;
-    width: 1360px;
     height: 4px;
     margin-top: 200px;
     margin-bottom: 0px;
+}
+
+#rodape{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 320px;
+}
+
+#hospital{
+    margin-left: 50px;
+}
+
+#endereco{
+    margin-left: 120px;
+    margin-right: 80px;
+}
+
+#contato{
+    margin-left: 80px;
+    margin-right: 100px;
+}
+
+
+#conteinerImg{
+    margin-right: 50px;
+}
+
+#logo-senac{
+    width: 150px;
+    height: 90px;
+}
+
+.titulo-footer{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.paragrafo-footer{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 170px;
 }
