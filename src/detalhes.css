@@ -155,7 +155,13 @@
     height: 480px;
     justify-content: space-evenly;
     line-height: 48px;
-}
+
+     /* Adicionando o efeito de fundo turvo */
+     background-color: rgba(255, 255, 255, 0.2); /* Fundo semi-transparente */
+     backdrop-filter: blur(10px); /* Aplicando o desfoque */
+     -webkit-backdrop-filter: blur(10px); /* Compatibilidade com Safari */
+ }
+
 
 #texto{
     font-size: 35px;
