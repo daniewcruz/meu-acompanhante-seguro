@@ -6,17 +6,19 @@
     <title>Document</title> 
     <link rel="stylesheet" href="/src/index.css">
     <link rel="stylesheet" href="assets/css/reset.css">
-    <script src="assets/js/script.js" defer></script>
+    <script src="index.js" defer></script>
 </head>
 <body>
     <header id="barra_inicial">
-        <nav id="titulo">MEU ACOMPANHANTE SEGURO</nav>
+        <nav id="titulo" >MEU ACOMPANHANTE SEGURO</nav>
 
         <nav id="acessibilidade">
-            <button class="botao_acessibilidade">A+</button>
-            <button class="botao_acessibilidade">A-</button>
+            <button class="botao_acessibilidade" id="aumentar_fonte">A+</button>
+            <button class="botao_acessibilidade" id="diminuir_fonte">A-</button>
             <button class="botao_acessibilidade">A</button>
-            <button class="botao_acessibilidade"><img src="index_img/mode noturno.png" alt="" id="botaoModo_noturno"></button>
+            <button class="botao_acessibilidade" onclick="darkMode()">
+                <img src="index_img/mode noturno.png" alt="" id="botaoModo_noturno">
+            </button>
         </nav>
 
         <nav id="Login">
@@ -32,24 +34,24 @@
 
     <h1 id="titulo_atencaoRiscos">Atenção aos Riscos</h1>
 
-    <section id="barra_proximosPassos">
-        <a id="passo2" href="#" class="passos">
-            <h5 class="titulo_passos">Risco 1</h5>
+    <section id="barra_atencaoRiscos">
+        <a id="risco1" href="#" class="riscos">
+            <h5 class="titulo_risco">Risco 1</h5>
         </a>
 
-        <a id="passo3" href="#" class="passos">
-            <h5 class="titulo_passos">Risco 2</h5>
+        <a id="risco2" href="#" class="riscos">
+            <h5 class="titulo_risco">Risco 2</h5>
         </a>
 
-        <a id="passo4" href="#" class="passos">
-            <h5 class="titulo_passos">Risco 3</h5>
+        <a id="risco3" href="#" class="riscos">
+            <h5 class="titulo_risco">Risco 3</h5>
         </a>
     </section>
 
     <main id="conteudo_1">
         <div class="areaTexto">
-            <h4 class="titulo_conteudo">Titulo Conteúdo</h4>
-            <p class="paragrafo_conteudo">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            <h4 class="titulo_conteudo" id="titulo_conteudo1">Titulo Conteúdo</h4>
+            <p class="paragrafo_conteudo" id="paragrafo_conteudo1">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Placeat nostrum facilis quibusdam fugit distinctio consequuntur 
             dignissimos velit, quaerat delectus quae aspernatur, maxime voluptas 
             ratione minima dolor et? Iusto, asperiores possimus?</p>
@@ -63,8 +65,8 @@
 
     <main id="conteudo_2">
         <div class="areaTexto">
-            <h4 class="titulo_conteudo">Titulo Conteúdo</h4>
-            <p class="paragrafo_conteudo">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            <h4 class="titulo_conteudo" id="titulo_conteudo2">Titulo Conteúdo</h4>
+            <p class="paragrafo_conteudo" id="paragrafo_conteudo2">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Placeat nostrum facilis quibusdam fugit distinctio consequuntur 
             dignissimos velit, quaerat delectus quae aspernatur, maxime voluptas 
             ratione minima dolor et? Iusto, asperiores possimus?</p>
@@ -78,8 +80,8 @@
 
     <main id="conteudo_3">
         <div class="areaTexto">
-            <h4 class="titulo_conteudo">Titulo Conteúdo</h4>
-            <p class="paragrafo_conteudo">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            <h4 class="titulo_conteudo" id="titulo_conteudo3">Titulo Conteúdo</h4>
+            <p class="paragrafo_conteudo" id="paragrafo_conteudo3">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Placeat nostrum facilis quibusdam fugit distinctio consequuntur 
             dignissimos velit, quaerat delectus quae aspernatur, maxime voluptas 
             ratione minima dolor et? Iusto, asperiores possimus?</p>
@@ -93,8 +95,8 @@
 
     <main id="conteudo_4">
         <div class="areaTexto">
-            <h4 class="titulo_conteudo">Titulo Conteúdo</h4>
-            <p class="paragrafo_conteudo">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            <h4 class="titulo_conteudo" id="titulo_conteudo4">Titulo Conteúdo</h4>
+            <p class="paragrafo_conteudo" id="paragrafo_conteudo4">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Placeat nostrum facilis quibusdam fugit distinctio consequuntur 
             dignissimos velit, quaerat delectus quae aspernatur, maxime voluptas 
             ratione minima dolor et? Iusto, asperiores possimus?</p>
