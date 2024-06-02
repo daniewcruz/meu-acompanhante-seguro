@@ -21,7 +21,7 @@ body {
 }
 
 .cabecalho-login h1 {
-  font-size: 24px; 
+  font-size: 26px; 
   font-weight: bold;
   color: #003832;
 }
@@ -69,30 +69,60 @@ body {
   color: #003832;
 }
 
-.login-section label {
-  display: block;
-  margin-bottom: 5px;
+.label-float {
+  position: relative;
+  padding-top: 13px;
 }
 
-/* Adiciona um estilo de borda diferente para inputs focados */
-.login-section input[type="text"]:focus,
-.login-section input[type="password"]:focus {
-  border-color: #00ffe5; 
-  outline: none; /* Remove o outline padrão do navegador */
-}
-
-.login-section input[type="text"],
-.login-section input[type="password"] {
+.label-float input {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
   border: 2px solid #58BDB2;
   border-radius: 20px;
   box-sizing: border-box;
+  outline: none;
+  transition: all 0.1s linear;
+  background: transparent;
 }
 
-.login-section input[type="password"] {
-  margin-bottom: 27px;
+.label-float input:focus {
+  border-color: #00ffe5; 
+}
+
+.label-float input::placeholder {
+  color: transparent;
+}
+
+/* Adicionei algumas propriedades de estilo para o input quando o label está flutuando */
+.label-float input:focus {
+  border-color: #00ffe5; 
+  padding-top: 21px; /* Ajuste o padding-top para manter a distância do texto */
+}
+
+.label-float input:not(:placeholder-shown) {
+  padding-top: 21px; /* Ajuste o padding-top para manter a distância do texto */
+}
+
+
+.label-float label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  pointer-events: none;
+  transition: all 0.1s linear;
+  background-color: #9cd8db;
+  padding: 0 5px;
+  transform: translateY(-50%);
+  color: #003832;
+}
+
+.label-float input:focus + label,
+.label-float input:not(:placeholder-shown) + label {
+  top: 0;
+  font-size: 15px;
+  padding-top: 0;
+  transform: translateY(40%);
 }
 
 .login-section input[type="submit"] {
@@ -108,6 +138,7 @@ body {
   border-radius: 20px;
   cursor: pointer;
   text-align: center;
+  margin-top: 10px;
 }
 
 .login-section input[type="submit"]:hover {
