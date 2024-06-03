@@ -1,0 +1,306 @@
+body{
+    background-color: #fff;
+
+body.darkMode{
+    background-color: #232c35;
+}
+
+} 
+#barra_inicial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 60px;
+}
+
+#titulo{
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 50px;
+    margin-right: 420px;
+    margin-top: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: bold; 
+    color: #003832;
+}
+
+#acessibilidade{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    background-color: #58BDB2;
+    border-radius: 30px;
+    width: 200px;
+    height: 50px;
+    margin-right: 20px;
+
+}
+
+.botao_acessibilidade{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 20px;
+    border: none;
+    background-color: #58BDB2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+}
+
+.botao_acessibilidade:hover{
+    background-color: #286951;
+    transition: 300ms;
+    color: white;
+}
+
+#botaoModo_noturno{
+    width: 40px;
+    height: 40px;
+}
+
+
+#botao_login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 25%;
+    background-color: #58BDB2;
+    border: none;
+    border-radius: 50px;
+    width: 55px;
+    height: 55px;
+}
+
+#botao_login:hover{
+    background-color: #286951;
+    transition: 300ms;
+}
+
+#imagem_login{
+    width: 35px;
+    height: 35px;
+}
+
+#hr_inicio{
+    border: none;
+    background-color: #286951;
+    height: 4px;
+    margin-top: 20px;
+    margin-bottom: 56px;
+}
+
+#destaque{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#imagem{
+    background-color: #58BDB2;
+    border-radius: 20px;
+    width: 1249px;
+    height: 522px;
+}
+
+#conteudo{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 1400px;
+    margin-top: 80px;
+}
+
+#titulo_conteudo{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #003832;
+}
+
+
+#videoConteudo{
+    display: flex;
+    justify-items: center;
+    border: 2px solid #58BDB2;
+    background-color: #58BDB2;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 1249px;
+    height: 643px;
+    z-index: 7;
+}
+
+#video{
+    border-radius: 20px;
+    width: 1249px;
+    height: 643px 
+}
+
+#textoConteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid #58BDB2;
+    border-radius: 50px;
+    padding-top: 250px;
+    margin-top: -200px;
+    width: 1244px;
+    height: 480px;
+    justify-content: space-evenly;
+    line-height: 48px;
+
+     /* Adicionando o efeito de fundo turvo */
+     background-color: rgba(255, 255, 255, 0.2); /* Fundo semi-transparente */
+     backdrop-filter: blur(10px); /* Aplicando o desfoque */
+     -webkit-backdrop-filter: blur(10px); /* Compatibilidade com Safari */
+ }
+
+
+#texto{
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#texto.DarkMode{
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#BotaoAudio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-left: 900px;
+    border-radius: 20px;
+    border: none;
+    background-color: #58BDB2;
+    width: 90px;
+    height: 60px;
+}
+
+#BotaoAudio:hover{
+    background-color: #286951;
+    transition: 300ms;
+}
+
+#imagemAudio{
+    width: 40px;
+    height: 40px;
+}
+
+#barra_proximosPassos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    background-color: #58BDB2;
+    height: 200px;
+}
+
+.passos{
+    display: flex;
+    background-color: #9c9c9c;
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 360px;
+    height: 500px;
+    text-decoration: none;
+}
+
+.passos:hover{
+    background-color: #c7c7c7;
+    transition: 300ms;
+}
+
+.titulo_passos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #286951;
+    color: white;
+    width: 600px;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin-top: 450px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 7px;
+}
+
+#passo2{
+    margin-right: 80px;
+
+}
+
+#passo4{
+    margin-left: 80px;
+}
+
+
+#hr_rodape{
+    border: none;
+    background-color: #286951;
+    height: 4px;
+    margin-top: 250px;
+    margin-bottom: 0px;
+}
+
+#rodape{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 320px;
+}
+
+#hospital{
+    margin-left: 50px;
+}
+
+#endereco{
+    margin-left: 120px;
+    margin-right: 80px;
+}
+
+#contato{
+    margin-left: 80px;
+    margin-right: 100px;
+}
+
+
+#conteinerImg{
+    margin-right: 50px;
+}
+
+#logo-senac{
+    width: 150px;
+    height: 90px;
+}
+
+.titulo-footer{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.paragrafo-footer{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 170px;
+}
