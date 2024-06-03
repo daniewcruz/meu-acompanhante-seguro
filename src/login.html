@@ -1,34 +1,34 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br"> <!-- Define o idioma da página como português do Brasil -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Administrador</title> 
-    <link rel="stylesheet" href="assets/css/login.css">
-    <link rel="stylesheet" href="assets/css/resetLogin.css">
-    <script src="assets/js/script.js" defer></script>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta a escala da página para dispositivos móveis -->
+    <title>Login Administrador</title> <!-- Título da página -->
+    <link rel="stylesheet" href="assets/css/login.css"> <!-- Link para o arquivo de estilos CSS para a página de login -->
+    <link rel="stylesheet" href="assets/css/resetLogin.css"> <!-- Link para o arquivo de estilos CSS para resetar estilos padrão -->
+    <script src="assets/js/script.js" defer></script> <!-- Script JavaScript que será carregado após o carregamento completo do HTML -->
 </head>
 <body>
-    <header class="cabecalho-login">
-        <h1>Bem-vindo à página de login para administradores</h1>
+    <header class="cabecalho-login"> <!-- Cabeçalho da página de login -->
+        <h1>Bem-vindo à página de login para administradores</h1> <!-- Título de boas-vindas no cabeçalho -->
     </header>
     <main>
-        <div class="login-container">
-            <section class="image-section">
-                <img src="assets/images/img-login-porta-personagem.png" alt="Imagem de Login representado por uma ilustração de um personagem entrando em uma porta">
+        <div class="login-container"> <!-- Container principal para o conteúdo de login -->
+            <section class="image-section"> <!-- Seção para a imagem ilustrativa -->
+                <img src="assets/images/img-login-porta-personagem.png" alt="Imagem de Login representado por uma ilustração de um personagem entrando em uma porta"> <!-- Imagem de login -->
             </section>
-            <section class="login-section">
-                <h2>Login</h2>
-                <form action="/login" method="post">
-                    <div class="label-float">
-                        <input type="text" id="email" name="email" placeholder=" " required>
-                        <label for="email">E-mail:</label>
+            <section class="login-section"> <!-- Seção para o formulário de login -->
+                <h2>Login</h2> <!-- Subtítulo da seção de login -->
+                <form action="/login" method="post"> <!-- Formulário de login que envia os dados via POST para o endpoint /login -->
+                    <div class="label-float"> <!-- Div para o campo de e-mail com rótulo flutuante -->
+                        <input type="text" id="email" name="email" placeholder=" " required> <!-- Campo de entrada para e-mail -->
+                        <label for="email">E-mail:</label> <!-- Rótulo para o campo de e-mail -->
                     </div>
-                    <div class="label-float">
-                        <input type="password" id="password" name="password" placeholder=" " required>
-                        <label for="password">Senha:</label>
+                    <div class="label-float"> <!-- Div para o campo de senha com rótulo flutuante -->
+                        <input type="password" id="password" name="password" placeholder=" " required> <!-- Campo de entrada para senha -->
+                        <label for="password">Senha:</label> <!-- Rótulo para o campo de senha -->
                     </div>
-                    <input type="submit" value="Entrar">
+                    <input type="submit" value="Entrar"> <!-- Botão de submissão do formulário -->
                 </form>
             </section>
         </div>
