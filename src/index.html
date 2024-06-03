@@ -1,14 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title> 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/src/index.css">
     <link rel="stylesheet" href="assets/css/reset.css">
-    <script src="assets/js/script.js" defer></script>
+    <script src="index.js" defer></script>
 </head>
 <body>
-    
+    <header id="barra_inicial">
+        <nav id="titulo" >MEU ACOMPANHANTE SEGURO</nav>
+
+        <nav id="acessibilidade">
+            <button class="botao_acessibilidade" id="aumentar_fonte">A+</button>
+            <button class="botao_acessibilidade" id="diminuir_fonte">A-</button>
+            <button class="botao_acessibilidade">A</button>
+            <button class="botao_acessibilidade" onclick="darkMode()">
+                <img src="index_img/mode noturno.png" alt="" id="botaoModo_noturno" title="Modo Escuro">
+            </button>
+        </nav>
+
+        <nav id="Login">
+            <button id="botao_login"><img src="index_img/login.png" alt="" id="imagem_login" title="Entrar"></button>
+        </nav>
+    </header>
+
+<hr id="hr_inicio">
+
+    <section id="destaque">
+        <img src="" id="imagem">
+    </section>
+
+    <h1 id="titulo_atencaoRiscos">Atenção aos Riscos</h1>
+
+    <section id="barra_atencaoRiscos">
+        <a id="risco1" href="#" class="riscos">
+            <h5 class="titulo_risco">Risco 1</h5>
+        </a>
+
+        <a id="risco2" href="#" class="riscos">
+            <h5 class="titulo_risco">Risco 2</h5>
+        </a>
+
+        <a id="risco3" href="#" class="riscos">
+            <h5 class="titulo_risco">Risco 3</h5>
+        </a>
+    </section>
+
+    <main id="conteudo_1">
+        <div class="areaTexto">
+            <h4 class="titulo_conteudo" id="titulo_conteudo1">Titulo Conteúdo</h4>
+            <p class="paragrafo_conteudo" id="paragrafo_conteudo1">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Placeat nostrum facilis quibusdam fugit distinctio consequuntur 
+            dignissimos velit, quaerat delectus quae aspernatur, maxime voluptas 
+            ratione minima dolor et? Iusto, asperiores possimus?</p>
+            <button class="saibaMais">Saiba Mais</button>
+        </div>
+
+        <div class="areaImg">
+
+        </div>
+    </main>
+
+    <main id="conteudo_2">
+        <div class="areaTexto">
+            <h4 class="titulo_conteudo" id="titulo_conteudo2">Titulo Conteúdo</h4>
+            <p class="paragrafo_conteudo" id="paragrafo_conteudo2">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Placeat nostrum facilis quibusdam fugit distinctio consequuntur 
+            dignissimos velit, quaerat delectus quae aspernatur, maxime voluptas 
+            ratione minima dolor et? Iusto, asperiores possimus?</p>
+            <button class="saibaMais">Saiba Mais</button>
+        </div>
+
+        <div class="areaImg">
+
+        </div>
+    </main>
+
+    <main id="conteudo_3">
+        <div class="areaTexto">
+            <h4 class="titulo_conteudo" id="titulo_conteudo3">Titulo Conteúdo</h4>
+            <p class="paragrafo_conteudo" id="paragrafo_conteudo3">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Placeat nostrum facilis quibusdam fugit distinctio consequuntur 
+            dignissimos velit, quaerat delectus quae aspernatur, maxime voluptas 
+            ratione minima dolor et? Iusto, asperiores possimus?</p>
+            <button class="saibaMais">Saiba Mais</button>
+        </div>
+
+        <div class="areaImg">
+
+        </div>
+    </main>
+
+    <main id="conteudo_4">
+        <div class="areaTexto">
+            <h4 class="titulo_conteudo" id="titulo_conteudo4">Titulo Conteúdo</h4>
+            <p class="paragrafo_conteudo" id="paragrafo_conteudo4">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Placeat nostrum facilis quibusdam fugit distinctio consequuntur 
+            dignissimos velit, quaerat delectus quae aspernatur, maxime voluptas 
+            ratione minima dolor et? Iusto, asperiores possimus?</p>
+            <button class="saibaMais">Saiba Mais</button>
+        </div>
+
+        <div class="areaImg">
+
+        </div>
+    </main>
+
+<hr id="hr_rodape">
+
+    <footer id="rodape">
+        <nav id="hospital">
+            <h2 class="titulo-footer">Hospital Santa Catarina</h2>
+            <p class="paragrafo-footer">Regras e Normas Hospitalares</p>
+        </nav>
+
+        <nav id="endereco">
+            <h2 class="titulo-footer">Endereço</h2>
+            <p class="paragrafo-footer">Rua Araquari, S/N - Conjunto Santa Catarina - Potengi - Natal / RN</p>
+        </nav>
+
+        <nav id="contato">
+            <h2 class="titulo-footer">Contato:</h2>
+            <p class="paragrafo-footer">(84) 3232-7701 / 7702 / 7721 / 7723</p>
+        </nav>
+
+        <nav >
+            <figure id="conteinerImg">
+                <img id="logo-senac" src="./index_img/Senac_logo.png" alt="">
+            </figure>
+        </nav>
+    </footer>
+
 </body>
 </html>

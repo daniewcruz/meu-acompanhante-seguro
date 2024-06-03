@@ -1,0 +1,42 @@
+
+body {
+
+}
+
+
+
+#seguranca_bem_estar {
+    border: 1px solid rgb(226, 20, 20);
+    height: 464px;
+    width: 1251px;
+
+ 
+    
+    
+};
+
+#titulo_inicial {
+    font-size: 577px;
+    font-weight: 800;
+    
+}
+
+#quadro_1 {
+    border: 1px solid red;
+    height: 439px;
+    width: 359px;
+}   
+
+#quadro_2 {
+    border: 1px solid red;
+    height: 439px;
+    width: 359px;
+}
+
+#quadro_3 {
+    border: 1px solid red;
+    height: 439px;
+    width: 359px;
+
+}
+    
