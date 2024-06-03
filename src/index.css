@@ -6,6 +6,7 @@ body.darkMode{
     background-color: #232c35;
 }
 
+/*Barra Inicial onde agrupa título, acessibilidae e login*/
 #barra_inicial{
     display: flex;
     justify-content: center;
@@ -13,7 +14,7 @@ body.darkMode{
     flex-direction: row;
     height: 60px;
 }
-
+/*Título Meu Acompanhante Seguro*/
 #titulo{
     display: flex;
     align-items: center;
@@ -27,6 +28,7 @@ body.darkMode{
     color: #003832;
 }
 
+/*Área de Acessibilidade*/
 #acessibilidade{
     display: flex;
     align-items: center;
@@ -40,6 +42,7 @@ body.darkMode{
 
 }
 
+/*Botões de Acessibilidade*/
 .botao_acessibilidade{
     display: flex;
     justify-content: center;
@@ -55,18 +58,20 @@ body.darkMode{
     height: 40px;
 }
 
+/*Efeito dos botões de Acessibilidade*/
 .botao_acessibilidade:hover{
     background-color: #286951;
     transition: 300ms;
     color: white;
 }
 
+/*Imagem do botão Modo Escuro*/
 #botaoModo_noturno{
     width: 40px;
     height: 40px;
 }
 
-
+/*Botão Login*/
 #botao_login{
     display: flex;
     justify-content: center;
@@ -80,17 +85,19 @@ body.darkMode{
     height: 55px;
 }
 
+/*Efeito do botão Login*/
 #botao_login:hover{
     background-color: #286951;
     transition: 300ms;
 }
 
+/*Imagem do botão Login*/
 #imagem_login{
     width: 35px;
     height: 35px;
 }
 
-
+/*HR que fica abaixo da barra inicial*/
 #hr_inicio{
     border: none;
     background-color: #286951;
@@ -99,6 +106,7 @@ body.darkMode{
     margin-bottom: 56px;
 }
 
+/*Conteiner do Destaque */
 #destaque{
     display: flex;
     align-items: center;
@@ -106,6 +114,7 @@ body.darkMode{
 
 }
 
+/*Ajuste da Imagem do Destaque*/
 #imagem{
     background-color: #58BDB2;
     border-radius: 20px;
@@ -135,6 +144,7 @@ body.darkMode{
     height: 200px;
 }
 
+/*Ajuste dos três quadrados de risco*/
 .riscos{
     display: flex;
     background-color: #9c9c9c;
@@ -145,11 +155,13 @@ body.darkMode{
     text-decoration: none;
 }
 
+/*Efeito dos três quadrados de risco*/
 .riscos:hover{
     background-color: #c7c7c7;
     transition: 300ms;
 }
 
+/*Título dentro dos três quadrados de risco*/
 .titulo_risco{
     display: flex;
     justify-content: center;
@@ -166,16 +178,18 @@ body.darkMode{
     z-index: 7px;
 }
 
+/*Ajuste da direita do quadrado de risco 1*/
 #risco1{
     margin-right: 80px;
 
 }
 
+/*Ajuste da esquerda do quadrado de risco 3*/
 #risco3{
     margin-left: 80px;
 }
 
-
+/*Conteiner geral de conteúdo 1*/
 #conteudo_1{
     display: flex;
     flex-direction: row;
@@ -184,6 +198,7 @@ body.darkMode{
     margin-top: 300px;
 }
 
+/*Conteiner geral de conteúdo 2*/
 #conteudo_2{
     display: flex;
     flex-direction: row;
@@ -192,6 +207,7 @@ body.darkMode{
     margin-top: 50px;
 }
 
+/*Conteiner geral de conteúdo 3*/
 #conteudo_3{
     display: flex;
     flex-direction: row;
@@ -200,6 +216,7 @@ body.darkMode{
     margin-top: 50px;
 }
 
+/*Conteiner geral de conteúdo 4*/
 #conteudo_4{
     display: flex;
     flex-direction: row;
@@ -208,6 +225,7 @@ body.darkMode{
     margin-top: 50px;
 }
 
+/*Área do texto dentro de conteúdo*/
 .areaTexto{
     display: flex;
     flex-direction: column;
@@ -219,6 +237,7 @@ body.darkMode{
     width: 620px;
 }
 
+/*Título do conteudo dentro de areaTexto*/
 .titulo_conteudo{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 45px;
@@ -227,14 +246,7 @@ body.darkMode{
     margin-bottom: 10px;
 }
 
-.titulo_conteudo.darkMode{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 45px;
-    font-weight: bold;
-    color: #ffffff;
-    margin-bottom: 10px;
-}
-
+/*Paragrafo do conteudo dentro de areaTexto*/
 .paragrafo_conteudo{
     width: 500px;
     font-family: Arial, Helvetica, sans-serif;
@@ -243,7 +255,7 @@ body.darkMode{
     margin-bottom: 5px;
 }
 
-
+/*Botão de saibaMais dentro de areaTexto*/
 .saibaMais{
     background-color: #286951;
     width: 150px;
@@ -257,10 +269,13 @@ body.darkMode{
     color: white;
 }
 
+/*Efeito do botão saibaMais*/
 .saibaMais:hover{
     background-color: #0f6457;
 }
 
+
+/*Área da imagem dentro de conteúdo*/
 .areaImg{
     background-color: #58BDB2;
     border: 4px solid #58BDB2;
@@ -269,6 +284,7 @@ body.darkMode{
     width: 620px;
 }
 
+/*HR que fica abaixo da barra conteúdo*/
 #hr_rodape{
     border: none;
     background-color: #286951;
