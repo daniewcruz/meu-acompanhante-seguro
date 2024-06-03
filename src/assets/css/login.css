@@ -1,0 +1,170 @@
+body {
+  display: flex; /* Define um layout flexível para o body */
+  flex-direction: column; /* Define a direção do layout flexível como coluna */
+  justify-content: center; /* Centraliza o conteúdo verticalmente */
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+  height: 100vh; /* Define a altura do body como 100% da altura da janela de visualização */
+  font-family: Arial, sans-serif; /* Define a fonte padrão */
+  background-color: #f4f4f4; /* Define a cor de fundo */
+  margin: 0; /* Remove as margens padrão */
+  background-image: url('/src/assets/images/fundo.png'); /* Define uma imagem de fundo */
+  background-size: cover; /* Ajusta o tamanho da imagem de fundo para cobrir o container */
+  background-position: center; /* Centraliza a imagem de fundo */
+  background-repeat: no-repeat; /* Impede que a imagem de fundo se repita */
+}
+
+.cabecalho-login {
+  text-align: center; /* Centraliza o texto */
+  margin: 20px; /* Define margens ao redor do cabeçalho */
+  padding: 0 20px; /* Adiciona preenchimento lateral */
+  box-sizing: border-box; /* Inclui preenchimento e bordas nas dimensões do elemento */
+}
+
+.cabecalho-login h1 {
+  font-size: 26px; /* Define o tamanho da fonte */
+  font-weight: bold; /* Define a fonte como negrito */
+  color: #003832; /* Define a cor da fonte */
+}
+
+.login-container {
+  display: flex; /* Define um layout flexível */
+  max-width: 900px; /* Define a largura máxima */
+  background-color: #9cd8db; /* Define a cor de fundo */
+  border-radius: 5px; /* Define bordas arredondadas */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao container */
+  overflow: hidden; /* Oculta o conteúdo que excede o container */
+  margin-top: 20px; /* Adiciona margem superior */
+}
+
+.main {
+  display: flex; /* Define um layout flexível */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
+.image-section {
+  flex: 1; /* Permite que a seção de imagem ocupe o espaço disponível */
+  display: flex; /* Define um layout flexível */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
+.image-section img {
+  max-width: 110%; /* Define a largura máxima da imagem */
+  height: auto; /* Ajusta a altura da imagem automaticamente */
+  border-radius: 0; /* Remove bordas arredondadas */
+}
+
+.login-section {
+  flex: 1; /* Permite que a seção de login ocupe o espaço disponível */
+  padding: 40px; /* Adiciona preenchimento ao redor da seção de login */
+}
+
+.login-section h2 {
+  text-align: center; /* Centraliza o texto */
+  margin-bottom: 30px; /* Adiciona margem inferior */
+  font-size: 40px; /* Define o tamanho da fonte */
+  font-family: Arial, Helvetica, sans-serif; /* Define a fonte */
+  font-weight: bold; /* Define a fonte como negrito */
+  color: #003832; /* Define a cor da fonte */
+}
+
+.label-float {
+  position: relative; /* Define o posicionamento relativo */
+  padding-top: 13px; /* Adiciona preenchimento superior */
+}
+
+.label-float input {
+  width: 100%; /* Define a largura como 100% */
+  padding: 10px; /* Adiciona preenchimento */
+  margin-bottom: 15px; /* Adiciona margem inferior */
+  border: 2px solid #58BDB2; /* Define a borda */
+  border-radius: 20px; /* Define bordas arredondadas */
+  box-sizing: border-box; /* Inclui preenchimento e bordas nas dimensões do elemento */
+  outline: none; /* Remove o contorno padrão */
+  transition: all 0.1s linear; /* Adiciona uma transição suave */
+  background: transparent; /* Define o fundo como transparente */
+}
+
+.label-float input:focus {
+  border-color: #00ffe5; /* Define a cor da borda ao focar */
+}
+
+.label-float input::placeholder {
+  color: transparent; /* Define a cor do placeholder como transparente */
+}
+
+.label-float input:focus {
+  border-color: #00ffe5; /* Define a cor da borda ao focar */
+  padding-top: 21px; /* Ajusta o preenchimento superior */
+}
+
+.label-float input:not(:placeholder-shown) {
+  padding-top: 21px; /* Ajusta o preenchimento superior */
+}
+
+.label-float label {
+  position: absolute; /* Define o posicionamento absoluto */
+  top: 50%; /* Define a posição superior como 50% do campo de input */
+  left: 15px; /* Define a posição à esquerda */
+  pointer-events: none; /* Desativa os eventos do ponteiro */
+  transition: all 0.1s linear; /* Adiciona uma transição suave */
+  background-color: #9cd8db; /* Define a cor de fundo */
+  padding: 0 5px; /* Adiciona preenchimento lateral */
+  transform: translateY(-50%); /* Ajusta a posição vertical */
+  color: #003832; /* Define a cor do texto */
+}
+
+.label-float input:focus + label,
+.label-float input:not(:placeholder-shown) + label {
+  top: 0; /* Ajusta a posição superior */
+  font-size: 15px; /* Define o tamanho da fonte */
+  padding-top: 0; /* Remove o preenchimento superior */
+  transform: translateY(40%); /* Ajusta a posição vertical */
+}
+
+.login-section input[type="submit"] {
+  display: block; /* Define o display como block */
+  width: 100%; /* Define a largura como 100% */
+  background-color: #ffffff; /* Define a cor de fundo */
+  color: #18514B; /* Define a cor do texto */
+  font-family: Arial, Helvetica, sans-serif; /* Define a fonte */
+  font-size: 20px; /* Define o tamanho da fonte */
+  font-weight: bold; /* Define a fonte como negrito */
+  padding: 10px; /* Adiciona preenchimento */
+  border: none; /* Remove a borda */
+  border-radius: 20px; /* Define bordas arredondadas */
+  cursor: pointer; /* Define o cursor como ponteiro */
+  text-align: center; /* Centraliza o texto */
+  margin-top: 10px; /* Adiciona margem superior */
+}
+
+.login-section input[type="submit"]:hover {
+  background-color: #003832; /* Define a cor de fundo ao passar o mouse */
+  color: #ffffff; /* Define a cor do texto ao passar o mouse */
+}
+
+/* Media query para telas menores que 768px */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column; /* Altera a direção do layout flexível para coluna */
+    max-width: 100%; /* Define a largura máxima como 100% */
+  }
+
+  .image-section {
+    order: 2; /* Move a seção de imagem para baixo */
+  }
+
+  .login-section {
+    order: 1; /* Move a seção de login para cima */
+    padding: 20px; /* Ajusta o preenchimento */
+  }
+
+  .cabecalho-login {
+    margin-top: 10px; /* Ajusta a margem superior */
+  }
+
+  .cabecalho-login h1 {
+    font-size: 20px; /* Ajusta o tamanho da fonte */
+  }
+}
