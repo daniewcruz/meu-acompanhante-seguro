@@ -7,7 +7,7 @@ body {
   font-family: Arial, sans-serif; /* Define a fonte padrão */
   background-color: #f4f4f4; /* Define a cor de fundo */
   margin: 0; /* Remove as margens padrão */
-  background-image: url('/src/assets/images/fundo.png'); /* Define uma imagem de fundo */
+  background-image: url('/src/assets/images/fundo-login.png'); /* Define uma imagem de fundo */
   background-size: cover; /* Ajusta o tamanho da imagem de fundo para cobrir o container */
   background-position: center; /* Centraliza a imagem de fundo */
   background-repeat: no-repeat; /* Impede que a imagem de fundo se repita */

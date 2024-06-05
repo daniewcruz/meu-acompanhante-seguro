@@ -1,11 +1,26 @@
-body{
-    background-color: #fff;
+body {
+    background-color: #f3f9f9;
+}
 
-body.darkMode{
+
+#principal {
+    
+    background-image: url(assets/images/fundo-site.jpeg);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+
+body.darkMode {
     background-color: #232c35;
 }
 
-} 
+body.darkMode #principal {
+    background-image: linear-gradient(rgb(15, 29, 28, 0.9), rgb(15, 29, 28, 0.8)), url(assets/images/fundo-site.jpeg);
+}
+
 #barra_inicial{
     display: flex;
     justify-content: center;
@@ -170,7 +185,8 @@ body.darkMode{
 
 
 #texto{
-    font-size: 35px;
+    font-size: 1.7em;
+
     font-family: Arial, Helvetica, sans-serif;
 }
 
