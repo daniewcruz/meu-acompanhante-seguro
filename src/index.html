@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title> 
-    <link rel="stylesheet" href="/src/index.css">
+    <link rel="stylesheet" href="/src/assets/css/index.css">
     <link rel="stylesheet" href="assets/css/reset.css">
-    <script src="index.js" defer></script>
     <script src="assets/js/script.js" defer></script>
 </head>
 <body>
@@ -16,24 +15,34 @@
         <nav id="titulo" >MEU ACOMPANHANTE SEGURO</nav>
 
         <nav id="acessibilidade">
-            <button class="botao_acessibilidade" id="aumentar_fonte">A+</button>
-            <button class="botao_acessibilidade" id="diminuir_fonte">A-</button>
-            <!-- <button class="botao_acessibilidade">A</button> -->
+            <button class="botao_acessibilidade" id="aumentar_fonte" class="redimensionar_fonte" title="aumentar fonte">A+</button>
+            <button class="botao_acessibilidade" id="diminuir_fonte" class="redimensionar_fonte" title="diminuir fonte">A-</button>
+            <button class="botao_acessibilidade" onclick='lightMode()'>
+                <img src="assets/images/icon_modoClaro.png" alt="" class="icones_tema" title="Modo Claro">
+            </button>
             <button class="botao_acessibilidade" onclick="darkMode()">
-                <img src="index_img/mode noturno.png" alt="" id="botaoModo_noturno" title="Modo Escuro">
+                <img src="assets/images/icon_modoNoturno.png" alt="" class="icones_tema" title="Modo Escuro">
             </button>
         </nav>
 
         <nav id="Login">
-            <button id="botao_login"><img src="index_img/login.png" alt="" id="imagem_login" title="Entrar"></button>
+            <button id="botao_login"><img src="assets/images/icon_login.png" alt="" id="imagem_login" title="Entrar"></button>
         </nav>
     </header>
 
     <hr id="hr_inicio">
 
     <section id="destaque">
-        <img src="" id="imagem">
-    </section>
+        <div id="conteinerDestaque">
+            <div id="destaque_texto">
+                <h1>Hospital Santa Catarina</h1>
+                <h3>Segurança e Bem-Estar</h3>
+            </div>
+            <div>
+                <img src="assets/images/img_acompanhante.jpg" alt="" id="destaque_imagem">
+            </div>
+        </div>
+        </section>
 
     <h1 id="titulo_atencaoRiscos">Atenção aos Riscos</h1>
 
@@ -53,7 +62,7 @@
 
     <main id="conteudo_1">
         <div class="areaTexto">
-            <h4 class="titulo_conteudo" id="titulo_conteudo1">Titulo Conteúdo</h4>
+            <h4 class="titulo_conteudo" id="titulo_conteudo1">Uso de EPI'S:</h4>
             <p class="paragrafo_conteudo" id="paragrafo_conteudo1">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Placeat nostrum facilis quibusdam fugit distinctio consequuntur 
             dignissimos velit, quaerat delectus quae aspernatur, maxime voluptas 
@@ -68,7 +77,7 @@
 
     <main id="conteudo_2">
         <div class="areaTexto">
-            <h4 class="titulo_conteudo" id="titulo_conteudo2">Titulo Conteúdo</h4>
+            <h4 class="titulo_conteudo" id="titulo_conteudo2">Contaminação Cruzada</h4>
             <p class="paragrafo_conteudo" id="paragrafo_conteudo2">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Placeat nostrum facilis quibusdam fugit distinctio consequuntur 
             dignissimos velit, quaerat delectus quae aspernatur, maxime voluptas 
@@ -83,7 +92,7 @@
 
     <main id="conteudo_3">
         <div class="areaTexto">
-            <h4 class="titulo_conteudo" id="titulo_conteudo3">Titulo Conteúdo</h4>
+            <h4 class="titulo_conteudo" id="titulo_conteudo3">Áreas de Isolamento</h4>
             <p class="paragrafo_conteudo" id="paragrafo_conteudo3">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Placeat nostrum facilis quibusdam fugit distinctio consequuntur 
             dignissimos velit, quaerat delectus quae aspernatur, maxime voluptas 
@@ -98,7 +107,7 @@
 
     <main id="conteudo_4">
         <div class="areaTexto">
-            <h4 class="titulo_conteudo" id="titulo_conteudo4">Titulo Conteúdo</h4>
+            <h4 class="titulo_conteudo" id="titulo_conteudo4">Fluxo de Alimentos</h4>
             <p class="paragrafo_conteudo" id="paragrafo_conteudo4">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Placeat nostrum facilis quibusdam fugit distinctio consequuntur 
             dignissimos velit, quaerat delectus quae aspernatur, maxime voluptas 
@@ -132,7 +141,7 @@
 
         <nav >
             <figure id="conteinerImg">
-                <img id="logo-senac" src="./index_img/Senac_logo.png" alt="">
+                <img id="logo-senac" src="assets/images/Img_senac.png" alt="">
             </figure>
         </nav>
     </footer>
