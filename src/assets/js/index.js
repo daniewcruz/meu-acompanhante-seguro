@@ -1,5 +1,7 @@
 function darkMode() {
-    var textosId = ['titulo', 'titulo_conteudo', 'texto'];
+    var textosId = ['titulo', 'titulo_atencaoRiscos', 'titulo_conteudo1', 'titulo_conteudo2', 
+    'titulo_conteudo3', 'titulo_conteudo4', 'paragrafo_conteudo1', 'paragrafo_conteudo2', 
+    'paragrafo_conteudo3', 'paragrafo_conteudo4'];
     
     var RodapeTitulos = document.querySelectorAll('.titulo-footer');
     var RodapeParagrafos = document.querySelectorAll('.paragrafo-footer');
@@ -12,7 +14,7 @@ function darkMode() {
             var elemento = document.getElementById(id);
                 elemento.dataset.originalColor = elemento.style.color || '';
                 elemento.style.color = '#FBEEE5';
-            })  
+            })
 
             RodapeTitulos.forEach(function(elemento) {
                     elemento.dataset.originalColor = elemento.style.color || '';
@@ -30,7 +32,9 @@ function darkMode() {
 }    
 
 function lightMode() {
-    var textosId = ['titulo', 'titulo_conteudo', 'texto'];
+    var textosId = ['titulo', 'titulo_atencaoRiscos', 'titulo_conteudo1', 'titulo_conteudo2', 
+    'titulo_conteudo3', 'titulo_conteudo4', 'paragrafo_conteudo1', 'paragrafo_conteudo2', 
+    'paragrafo_conteudo3', 'paragrafo_conteudo4'];
     
     var RodapeTitulos = document.querySelectorAll('.titulo-footer');
     var RodapeParagrafos = document.querySelectorAll('.paragrafo-footer');

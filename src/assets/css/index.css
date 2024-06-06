@@ -11,11 +11,6 @@ body {
     background-color: rgba(0, 0, 0, 0.0);
 }
 
-
-body.darkMode{
-    background-color: #232c35;
-}
-
 body.darkMode #principal {
     background-image: linear-gradient(rgb(15, 29, 28, 0.9), rgb(15, 29, 28, 0.8)), url('assets/images/fundo-site.jpeg');
 }
@@ -71,6 +66,7 @@ body.darkMode #principal {
     font-weight: bold;
     width: 50px;
     height: 50px;
+    cursor: pointer;
 }
 
 /*Efeito dos botões de Acessibilidade*/
@@ -101,6 +97,7 @@ body.darkMode #principal {
     border-radius: 50px;
     width: 55px;
     height: 55px;
+    cursor: pointer;
 }
 
 /*Efeito do botão Login*/
@@ -190,6 +187,7 @@ body.darkMode #principal {
     width: 360px;
     height: 500px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 /*Efeito dos três quadrados de risco*/
@@ -305,6 +303,7 @@ body.darkMode #principal {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    cursor: pointer;
 }
 
 /*Efeito do botão saibaMais*/

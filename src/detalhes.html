@@ -5,76 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalhes</title>
 
-    <link rel="stylesheet" href="detalhes.css">
-    <script src="detalhes.js" defer></script>
+    <link rel="stylesheet" href="assets/css/detalhes.css">
     <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/detalhes.js" defer></script>
 </head>
 <body>
 
     <main id="principal">
         <header id="barra_inicial">
-            <nav id="titulo">MEU ACOMPANHANTE SEGURO</nav>
-    
-            <nav id="acessibilidade">
-                <button class="botao_acessibilidade" id="aumentar_fonte">A+</button>
-                <button class="botao_acessibilidade" id="diminuir_fonte">A-</button>
-                <!-- <button class="botao_acessibilidade">A</button> -->
-                <button class="botao_acessibilidade" onclick="darkMode()">
-                    <img src="detalhes_img/mode noturno.png" alt="" id="botaoModo_noturno">
-                </button>
-            </nav>
-    
-            <nav id="Login">
-                <button id="botao_login"><img src="detalhes_img/login.png" alt="" id="imagem_login"></button>
-            </nav>
-        </header>
-    
+        <nav id="titulo" >MEU ACOMPANHANTE SEGURO</nav>
+
+        <nav id="acessibilidade">
+            <button class="botao_acessibilidade" id="aumentar_fonte" class="redimensionar_fonte" title="aumentar fonte">A+</button>
+            <button class="botao_acessibilidade" id="diminuir_fonte" class="redimensionar_fonte" title="diminuir fonte">A-</button>
+            <button class="botao_acessibilidade" onclick='lightMode()'>
+                <img src="assets/images/icon_modoClaro.png" alt="" class="icones_tema" title="Modo Claro">
+            </button>
+            <button class="botao_acessibilidade" onclick="darkMode()">
+                <img src="assets/images/icon_modoNoturno.png" alt="" class="icones_tema" title="Modo Escuro">
+            </button>
+        </nav>
+
+        <nav id="Login">
+            <button id="botao_login"><img src="assets/images/icon_login.png" alt="" id="imagem_login" title="Entrar"></button>
+        </nav>
+    </header>
+
     <hr id="hr_inicio">
-    
-        <section id="destaque">
-            <img src="" id="imagem">
-    
+
+    <section id="destaque">
+        <div id="conteinerDestaque">
+            <div id="destaque_texto">
+                <h1>Hospital Santa Catarina</h1>
+                <h3>Segurança e Bem-Estar</h3>
             </div>
+            <div>
+                <img src="assets/images/img_acompanhante.jpg" alt="" id="destaque_imagem">
+            </div>
+        </div>
         </section>
     
         <main id="conteudo">
-            <h1 id="titulo_conteudo">Título do Conteúdo</h1>
+            <h1 id="titulo_conteudo">Uso de EPI'S</h1>
     
             <main id="videoConteudo">
                 <iframe src="" frameborder="0" id="video"></iframe>
             </main>
             <main id="textoConteudo">
                 <p id="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, 
-                    <br>
+                    
                     velit error ex, tempore repellendus adipisci dolore esse porro, quos  
-                    <br>
+                    
                     vitae nihil sit exercitationem eligendi reprehenderit itaque asperiores  
                     
-                    <br>
                     ipsum eius at! Lorem ipsum dolor sit, amet consectetur adipisicing elit.  
-                    <br>
+                    
                     Inventore dolorem sed alias vitae, quasi voluptatibus! Voluptatum illum,  
-                    <br>
+                    
                     provident deserunt vitae rerum consectetur qui? Eligendi quod odit ipsum 
-                    <br>
+                    
                     dolor deserunt quasi.    
                     </p>
-                <button id="BotaoAudio"><img src="detalhes_img/audio.png" alt="" id="imagemAudio"></button>
+                <button id="BotaoAudio"><img src="assets/images/icon_audio.png" alt="" id="imagemAudio"></button>
             </main>
     
         </main>
     
-        <section id="barra_proximosPassos">
-            <a id="passo2" href="#" class="passos">
-                <h5 class="titulo_passos">Passo 2</h5>
+        <section id="barra_proximoConteudo">
+            <a id="conteudo2" href="#" class="conteudo">
+                <h5 class="titulo_conteudo">Passo 2</h5>
             </a>
     
-            <a id="passo3" href="#" class="passos">
-                <h5 class="titulo_passos">Passo 3</h5>
+            <a id="conteudo3" href="#" class="conteudo">
+                <h5 class="titulo_conteudo">Passo 3</h5>
             </a>
     
-            <a id="passo4" href="#" class="passos">
-                <h5 class="titulo_passos">Passo 4</h5>
+            <a id="conteudo4" href="#" class="conteudo">
+                <h5 class="titulo_conteudo">Passo 4</h5>
             </a>
         </section>
     
@@ -99,7 +106,7 @@
 
         <nav >
             <figure id="conteinerImg">
-                <img id="logo-senac" src="./detalhes_img/Senac_logo.png" alt="">
+                <img id="logo-senac" src="assets/images/Img_senac.png" alt="">
             </figure>
         </nav>
     </footer>
