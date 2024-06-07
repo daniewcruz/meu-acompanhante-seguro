@@ -26,11 +26,11 @@ body.darkMode #principal {
 }
 /*Título Meu Acompanhante Seguro*/
 #titulo{
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
     width: 500px;
     height: 50px;
-    margin-right: 420px;
+    margin-right: 20px;
     margin-top: 23px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 28px;
@@ -85,12 +85,18 @@ body.darkMode #principal {
     width: 30px;
     height: 30px;
 }
+#login{
+    width: 1440px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
 /*Botão Login*/
 #botao_login{
-    display: flex;
+   /* ; display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center */
     margin-left: 10px;
     margin-top: 20px;
     background-color: #58BDB2;
@@ -381,4 +387,102 @@ body.darkMode #principal {
     font-size: 18px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 170px;
+}
+
+ @media (max-width: 768px) {
+    
+    /*body{
+        background-color: red;
+    }
+
+    #barra_inicial{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #titulo{
+        width: 500px;
+        margin-left: 520px;
+        margin-top: 180px;    
+    }
+
+    #acessibilidade{
+        width: 270px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 80px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        margin-left: 500px;
+    }
+
+    .botao_acessibilidade{
+        margin: 4px;
+    } */
+
+    #barra_inicial{
+        width: 1440px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    #barra_atencaoRiscos{
+        margin-bottom: 300px;
+    }
+
+    .conteudo{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        height: 100%;
+        margin-top: 100px;
+    }
+
+    .areaImg{
+        background-color: #c7c7c7;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 0px;
+        width: 620px;
+    }
+
+    .imagemConteudo{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 0px;
+        width: 613px;
+        height: 392px;
+    }
+
+
+    .areaTexto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 0px 4px 0px 4px solid #58BDB2;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        width: 620px;
+        padding-top: 20px;
+    }
+
+    .saibaMais{
+        background-color: #FBEEE5;
+        border: 3px solid #313040;
+        color: #313040;
+        width: 150px;
+        height: 60px;
+        margin-left: 400px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        border-radius: 15px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        cursor: pointer;
+    }
 }
