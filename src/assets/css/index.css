@@ -323,6 +323,13 @@ body.darkMode #principal {
     width: 620px;
 }
 
+.imagemConteudo{
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    width: 613px;
+    height: 392px;
+}
+
 /*HR que fica abaixo da barra conteúdo*/
 #hr_rodape{
     border: none;
