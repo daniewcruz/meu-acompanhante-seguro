@@ -12,18 +12,13 @@
 <body>
     
     <main id="principal">
-            <header id="barra_inicial">
+        <header id="barra_inicial">
+            <div id="conteinerEsquerdo">
+                <h1 id="titulo" >MEU ACOMPANHANTE SEGURO</h1>
+            </div>
             
-                <nav id="login">
-                    <h1 id="titulo" >MEU ACOMPANHANTE SEGURO</h1>
-            
-                    <a href="login.html"><button id="botao_login">
-                        <img src="assets/images/icon_login.png" alt="" id="imagem_login" title="Entrar">
-                    </button>
-                    </a>
-                </nav>
-
-                <nav id="acessibilidade">
+            <div id="conteinerDireito">
+                <nav id="barra_acessibilidade">
                     <button class="botao_acessibilidade" id="aumentar_fonte" class="redimensionar_fonte" title="aumentar fonte">A+</button>
                     <button class="botao_acessibilidade" id="diminuir_fonte" class="redimensionar_fonte" title="diminuir fonte">A-</button>
                     <button class="botao_acessibilidade" onclick='lightMode()'>
@@ -33,9 +28,12 @@
                         <img src="assets/images/icon_modoNoturno.png" alt="" class="icones_tema" title="Modo Escuro">
                     </button>
                 </nav>
-
-                
-            </header>
+            
+                <nav>
+                    <button id="botao_login"><img src="assets/images/icon_login.png" alt="" id="icone_login" title="Entrar"></button>
+                </nav>
+            </div>
+        </header>
 
         <hr id="hr_inicio">
 
@@ -67,6 +65,8 @@
                 </a>
             </section>
 
+            <h1 id="secaoConteudo">Conteúdos</h1>
+
             <main class="conteudo">
                 <div class="areaTexto">
                     <h4 class="titulo_conteudo" id="titulo_conteudo1">Uso de EPI'S</h4>
@@ -78,7 +78,7 @@
                 </div>
 
                 <div class="areaImg">
-                    <img src="assets/images/img_aleatoriaExp.jpg" alt="" class="imagemConteudo">
+                    <img src="assets/images/img_epi.jpg" alt="" class="imagemConteudo">
                 </div>
             </main>
 
@@ -93,7 +93,7 @@
                 </div>
 
                 <div class="areaImg">
-                    <img src="assets/images/img_aleatoriaExp.jpg" alt="" class="imagemConteudo">
+                    <img src="assets/images/img_contaminacao.jpg" alt="" class="imagemConteudo">
                 </div>
             </main>
 
@@ -123,7 +123,7 @@
                 </div>
 
                 <div class="areaImg">
-                    <img src="assets/images/img_aleatoriaExp.jpg" alt="" class="imagemConteudo">
+                    <img src="assets/images/img_fluxoAlimentos.jpg" alt="" class="imagemConteudo">
                 </div>
             </main>
 
@@ -148,7 +148,7 @@
             </nav>
 
             <nav >
-                <figure id="conteinerImg">
+                <figure>
                     <img id="logo-senac" src="assets/images/Img_senac.png" alt="">
                 </figure>
             </nav>

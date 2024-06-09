@@ -1,5 +1,5 @@
 function darkMode() {
-    var textosId = ['titulo', 'titulo_atencaoRiscos', 'titulo_conteudo1', 'titulo_conteudo2', 
+    var textosId = ['titulo', 'titulo_atencaoRiscos', 'secaoConteudo','titulo_conteudo1', 'titulo_conteudo2', 
     'titulo_conteudo3', 'titulo_conteudo4', 'paragrafo_conteudo1', 'paragrafo_conteudo2', 
     'paragrafo_conteudo3', 'paragrafo_conteudo4'];
     
