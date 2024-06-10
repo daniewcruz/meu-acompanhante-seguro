@@ -13,26 +13,27 @@
 
     <main id="principal">
         <header id="barra_inicial">
-        <nav id="titulo" >MEU ACOMPANHANTE SEGURO</nav>
-
-        <nav id="acessibilidade">
-            <button class="botao_acessibilidade" id="aumentar_fonte" class="redimensionar_fonte" title="aumentar fonte">A+</button>
-            <button class="botao_acessibilidade" id="diminuir_fonte" class="redimensionar_fonte" title="diminuir fonte">A-</button>
-            <button class="botao_acessibilidade" onclick='lightMode()'>
-                <img src="assets/images/icon_modoClaro.png" alt="" class="icones_tema" title="Modo Claro">
-            </button>
-            <button class="botao_acessibilidade" onclick="darkMode()">
-                <img src="assets/images/icon_modoNoturno.png" alt="" class="icones_tema" title="Modo Escuro">
-            </button>
-        </nav>
-
-        <nav id="Login">
-            <a href="login.html"><button id="botao_login">
-                <img src="assets/images/icon_login.png" alt="" id="imagem_login" title="Entrar">
-            </button>
-            </a>
-        </nav>
-    </header>
+            <div id="conteinerEsquerdo">
+                <h1 id="titulo" >MEU ACOMPANHANTE SEGURO</h1>
+            </div>
+            
+            <div id="conteinerDireito">
+                <nav id="barra_acessibilidade">
+                    <button class="botao_acessibilidade" id="aumentar_fonte" class="redimensionar_fonte" title="aumentar fonte">A+</button>
+                    <button class="botao_acessibilidade" id="diminuir_fonte" class="redimensionar_fonte" title="diminuir fonte">A-</button>
+                    <button class="botao_acessibilidade" onclick='lightMode()'>
+                        <img src="assets/images/icon_modoClaro.png" alt="" class="icones_tema" title="Modo Claro">
+                    </button>
+                    <button class="botao_acessibilidade" onclick="darkMode()">
+                        <img src="assets/images/icon_modoNoturno.png" alt="" class="icones_tema" title="Modo Escuro">
+                    </button>
+                </nav>
+            
+                <nav>
+                    <button id="botao_login"><img src="assets/images/icon_login.png" alt="" id="icone_login" title="Entrar"></button>
+                </nav>
+            </div>
+        </header>
 
     <hr id="hr_inicio">
 
@@ -52,7 +53,7 @@
             <h1 id="titulo_conteudo">Uso de EPI'S</h1>
     
             <main id="videoConteudo">
-                <iframe src="" frameborder="0" id="video"></iframe>
+                <iframe src="https://www.youtube.com/embed/mfm9KHnDA-w" frameborder="0" id="video"></iframe>
             </main>
             <main id="textoConteudo">
                 <p id="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, 
@@ -73,7 +74,8 @@
             </main>
     
         </main>
-    
+        <h1 id="titulo_proximoConteudo">Próximo Conteúdo</h1>
+        
         <section id="barra_proximoConteudo">
             <a id="conteudo2" href="#" class="conteudo">
                 <h5 class="titulo_conteudo">Contaminação Cruzada</h5>

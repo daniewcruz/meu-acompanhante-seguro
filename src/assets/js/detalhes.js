@@ -1,5 +1,5 @@
 function darkMode() {
-    var textosId = ['titulo', 'titulo_conteudo', 'texto'];
+    var textosId = ['titulo', 'titulo_proximoConteudo','titulo_conteudo', 'texto'];
     
     var RodapeTitulos = document.querySelectorAll('.titulo-footer');
     var RodapeParagrafos = document.querySelectorAll('.paragrafo-footer');
@@ -30,7 +30,7 @@ function darkMode() {
 }    
 
 function lightMode() {
-    var textosId = ['titulo', 'titulo_conteudo', 'texto'];
+    var textosId = ['titulo', 'titulo_proximoConteudo', 'titulo_conteudo', 'texto'];
     
     var RodapeTitulos = document.querySelectorAll('.titulo-footer');
     var RodapeParagrafos = document.querySelectorAll('.paragrafo-footer');
