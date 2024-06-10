@@ -29,7 +29,7 @@ body {
     display: flex;
     margin-left: 20px;
     margin-right: 420px;
-    padding-top: 20px;
+    padding-top: 24px;
     
 }
 
@@ -42,7 +42,7 @@ body {
 #conteinerDireito{
     display: flex;
     margin-right: 20px;
-    padding-top: 20px
+    padding-top: 24px
 }
 
 #barra_acessibilidade{

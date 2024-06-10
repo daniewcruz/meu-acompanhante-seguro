@@ -138,7 +138,7 @@ body.darkMode #principal {
 #destaque_texto{
     width: 650px;
     margin-left: 30px;
-    line-height: 1cqmin;
+    line-height: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 38px;
     color: #FBEEE5;

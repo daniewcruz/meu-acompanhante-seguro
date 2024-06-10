@@ -57,3 +57,7 @@ function lightMode() {
                 })
 
 }
+
+function ouvir(){
+    let texto = document.getElementById('texto')
+}
