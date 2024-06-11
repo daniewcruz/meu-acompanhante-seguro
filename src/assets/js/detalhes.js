@@ -59,5 +59,15 @@ function lightMode() {
 }
 
 function ouvir(){
-    let texto = document.getElementById('texto')
-}
+    // Obtém o texto do parágrafo
+    var texto = document.getElementById('texto').innerText;
+    
+    // Cria uma nova instância de SpeechSynthesisUtterance
+    var fala = new SpeechSynthesisUtterance(texto);
+    
+    // Define o idioma (opcional)
+    fala.lang = 'pt-BR';
+    
+    // Usa a SpeechSynthesis para falar o texto
+    window.speechSynthesis.speak(fala);
+};
