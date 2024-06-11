@@ -30,7 +30,6 @@ body {
     margin-left: 20px;
     margin-right: 420px;
     padding-top: 24px;
-    
 }
 
 #titulo{
@@ -425,16 +424,16 @@ body {
 
     #risco1{
         margin-top: 1100px;
-        margin-left: 100px;
+        margin-left: 80px;
     }
 
     #risco2{
-        margin-left: 20px;
+        margin-left: 0px;
     }
     
     /*Ajuste da esquerda do quadrado de risco 3*/
     #risco3{
-        margin-left: 20px;
+        margin-left: 0px;
     }
     
     #secaoConteudo{
