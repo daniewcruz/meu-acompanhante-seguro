@@ -207,50 +207,6 @@ body {
     animation: flutuante 1.5s infinite ease-out;
 }
 
-
-/*
-.riscos{
-    display: flex;
-    background-color: #bdbdbd;
-    border-radius: 20px;
-    margin-top: 20px;
-    width: 360px;
-    height: 500px;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.riscos:hover{
-    background-color: #f3f2f2;
-    transition: 300ms;
-}
-
-.titulo_risco{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #58BDB2;
-    color: #313040;
-    width: 600px;
-    height: 50px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 25px;
-    margin-top: 450px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    z-index: 7px;
-}
-
-#risco1{
-    margin-right: 80px;
-
-}
-
-#risco3{
-    margin-left: 80px;
-}
-*/
-
 #secaoConteudo{
     display: none;
     /*
@@ -395,12 +351,9 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 170px;
 }
-@media (max-width: 360px) {
+@media (max-width: 375px) {
     #barra_inicial{
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         height: 50px;
     }
     
@@ -414,24 +367,17 @@ body {
     
     #titulo{
         text-align: center;
-        color: #313040;
         font-size: 25px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     
     #conteinerDireito{
-        display: flex;
         margin-left: 40px;
         margin-right: 20px;
         padding-top: 0px
     }
     
     #barra_acessibilidade{
-        display: flex;
-        align-items: center;
-        justify-content: center;
         margin-top: 7px;
-        background-color: #58bdb2;
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
         border-bottom-left-radius: 15px;
@@ -442,20 +388,11 @@ body {
     }
     
     .botao_acessibilidade{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         margin: 15px;
         border-radius: 20px;
-        border: none;
-        background-color: #58bdb2;
-        color: #313040;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 25px;
-        font-weight: bold;
         width: 25px;
         height: 25px;
-        cursor: pointer;
     }
     
     
@@ -467,37 +404,19 @@ body {
     #botao_login{
         display: none;
     }
-        
-    /*HR que fica abaixo da barra inicial*/
-    #hr_inicio{
-        border: none;
-        background-color: #58bdb2;
-        height: 4px;
-        margin-top: 20px;
-        margin-bottom: 80px;
-    }
     
     #conteinerDestaque{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #58BDB2;
-        border-radius: 20px;
         width: 100%;
         height: 100%;
     }
     
     #destaque_texto{
         width: 100%;
-        margin-left: 30px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-left: 30px; 
         font-size: 15px;
-        color: #FBEEE5;
     }
     
     #destaque_imagem{
-        border-radius: 55%;
         margin-right:10px;
         width: 100%;
         height: 100%;
@@ -507,7 +426,6 @@ body {
     #titulo_atencaoRiscos{
         text-align: center;
         font-size: 30px;
-        align-items: center;
         border: 5px solid #58BDB2;
         border-radius: 40px;
         height: 100%;
@@ -515,14 +433,10 @@ body {
     }
 
     #barra_atencaoRiscos{
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         margin-top: 420px;
         margin-bottom: 450px;
         background-color: transparent;
-        height: 200px;
         gap: 20px;
     }
 
@@ -531,24 +445,17 @@ body {
         height: 300px;
         border-top-left-radius: 40px;
         border-top-right-radius: 40px;
-        margin-bottom: -22px;
-        animation: flutuante 1.5s infinite ease-out;
+        margin-bottom: -30px;
     }
 
     .titulo_risco{
         text-align: center;
         padding-top: 5px;
-        background-color: #58BDB2;
-        color: #313040;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
         height: 35px;
         font-size: 22px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        animation: flutuante 1.5s infinite ease-out;
+       
     }
     
-
     #secaoConteudo{
         display: flex;
         align-items: center;
@@ -605,10 +512,6 @@ body {
     
     .titulo_conteudo{
         text-align: center;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 40px;
-        font-weight: bold;
-        color: #313040;
         margin-top: -20px;
         margin-bottom: 10px;
     }
@@ -629,9 +532,6 @@ body {
     }
 
     #hr_rodape{
-        border: none;
-        background-color: #58bdb2;
-        height: 4px;
         margin-top: 70px;
         margin-bottom: 0px;
     }
@@ -668,15 +568,71 @@ body {
  }
 
 
- @media (min-width: 375px)and (max-width: 767px) {
+ @media (min-width: 390px)and (max-width: 767px) {
     
-    #conteinerDestaque{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #58BDB2;
+    #barra_inicial{
+        flex-direction: column;
+        height: 50px;
+    }
+    
+    #conteinerEsquerdo{
+        margin-top: 70px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-top: 20px;
+    }
+    
+    #titulo{
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    #conteinerDireito{
+        margin-left: 40px;
+        margin-right: 20px;
+        padding-top: 0px
+    }
+    
+    #barra_acessibilidade{
+        margin-top: 7px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        width: 220px;
+        height: 40px;
+        margin-right: 20px;
+    }
+    
+    .botao_acessibilidade{
+        margin: 15px;
         border-radius: 20px;
+        font-size: 25px;
+        width: 25px;
+        height: 25px;
+    }
+    
+    .icones_tema{
+        width: 35px;
+        height: 35px;
+    }
+     
+    #botao_login{
+        display: none;
+    }
+
+    #hr_inicio{
+        border: none;
+        background-color: #58bdb2;
+        height: 4px;
+        margin-top: 20px;
+        margin-bottom: 80px;
+    }
+
+    #conteinerDestaque{
+        flex-direction: row;
+        margin-bottom: -40px;
         width: 100%;
         height: 100%;
     }
@@ -684,9 +640,7 @@ body {
     #destaque_texto{
         width: 100%;
         margin-left: 30px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 15px;
-        color: #FBEEE5;
     }
     
     #destaque_imagem{
@@ -696,48 +650,37 @@ body {
         height: 100%;
     }
     
-    
     #titulo_atencaoRiscos{
         text-align: center;
         font-size: 30px;
-        align-items: center;
         border: 5px solid #58BDB2;
         border-radius: 40px;
         height: 100%;
     }
     
-
-    /*
     #barra_atencaoRiscos{
-        background-color: transparent;
         flex-direction: column;
-        margin-bottom: 1350px;
-        gap: 30px;
+        margin-top: 420px;
+        margin-bottom: 450px;
+        background-color: transparent;
+        height: 200px;
+        gap: 20px;
     }
 
-    .riscos{
-        display: flex;
-        background-color: #bdbdbd;
-        border-radius: 20px;
-        margin-top: 20px;
-        width: 360px;
-        height: 500px;
-        text-decoration: none;
-        cursor: pointer;
+    .img_riscos{
+        width: 200px;
+        height: 300px;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        margin-bottom: -22px;
     }
 
-    #risco1{
-        margin-top: 1100px;
-        margin-left: 100px;
+    .titulo_risco{
+        text-align: center;
+        padding-top: 5px;
+        height: 35px;
+        font-size: 22px;
     }
-
-    #risco2{
-        margin-left: 20px;
-    }
-    
-    #risco3{
-        margin-left: 20px;
-    }*/
 
     #secaoConteudo{
         display: flex;
@@ -757,9 +700,7 @@ body {
 
     /*ÁREA REFERENTE AO CONTEÚDO*/
     .conteudo{
-        display: flex;
         flex-direction: column-reverse;
-        align-items: center;
         height: 100%;
         margin-top: 50px;
     }
@@ -795,10 +736,6 @@ body {
     
     .titulo_conteudo{
         text-align: center;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 40px;
-        font-weight: bold;
-        color: #313040;
         margin-top: -20px;
         margin-bottom: 10px;
     }
@@ -853,10 +790,9 @@ body {
     
  }
 
- @media (min-width: 768px) and (max-width: 1200px){
+ @media (min-width: 768px) and (max-width: 900px){
     /*ÁREA BARRA INICIAL*/
     #conteinerEsquerdo{
-        display: flex;
         margin-left: 20px;
         margin-right: 80px;
         padding-top: 20px;
@@ -864,37 +800,30 @@ body {
     }
     
     #titulo{
-        color: #313040;
         font-size: 28px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     
     #conteinerDireito{
-        display: flex;
-        margin-right: 20px;
+        margin-right: 2px;
         margin-left: 0px;
         padding-top: 20px
     }
     
     #barra_acessibilidade{
-        display: flex;
-        align-items: center;
-        justify-content: center;
         margin-top: 7px;
-        background-color: #58bdb2;
         border-radius: 30px;
         width: 250px;
         height: 50px;
         margin-right: 20px;
     }
 
+    #botao_login{
+        display: none;
+    }
+
     /*ÁREA DO BANNER*/
     #conteinerDestaque{
-        display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #58BDB2;
         border-radius: 20px;
         width: 100%;
         height: 100%;
@@ -903,9 +832,7 @@ body {
     #destaque_texto{
         width: 100%;
         margin-left: 30px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 30px;
-        color: #FBEEE5;
     }
     
     #destaque_imagem{
@@ -926,35 +853,27 @@ body {
     }
     
     #barra_atencaoRiscos{
-        background-color: transparent;
         flex-direction: column;
-        margin-bottom: 1350px;
-        gap: 30px;
+        margin-top: 710px;
+        margin-bottom: 720px;
+        background-color: transparent;
+        height: 200px;
+        gap: 100px;
     }
 
-    .riscos{
-        display: flex;
-        background-color: #bdbdbd;
-        border-radius: 20px;
-        margin-top: 20px;
-        width: 360px;
-        height: 500px;
-        text-decoration: none;
-        cursor: pointer;
+    .img_riscos{
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        margin-bottom: -22px;
     }
 
-    #risco1{
-        margin-top: 1100px;
-        margin-left: 100px;
-    }
-
-    #risco2{
-        margin-left: 20px;
-    }
-    
-    /*Ajuste da esquerda do quadrado de risco 3*/
-    #risco3{
-        margin-left: 20px;
+    .titulo_risco{
+        text-align: center;
+        padding-top: 5px;
+        height: 35px;
+        font-size: 22px;
     }
 
     #secaoConteudo{
@@ -973,7 +892,6 @@ body {
     }
     
     .conteudo{
-        display: flex;
         flex-direction: column-reverse;
         align-items: center;
         height: 100%;
@@ -1012,10 +930,6 @@ body {
     
     .titulo_conteudo{
         text-align: center;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 45px;
-        font-weight: bold;
-        color: #313040;
         margin-bottom: 10px;
     }
     
@@ -1027,23 +941,16 @@ body {
     }
 
     .saibaMais{
-        background-color: #FBEEE5;
-        border: 3px solid #313040;
-        color: #313040;
         width: 200px;
         height: 100%;
         margin-left: 100%;
         margin-top: 20px;
         border-radius: 15px;
         font-size: 20px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold;
-        cursor: pointer;
     }
 
     #hr_rodape{
         border: none;
-        background-color: #58bdb2;
         height: 4px;
         margin-top: 70px;
         margin-bottom: 0px;
@@ -1052,7 +959,6 @@ body {
 
     /*ÁREA REFERENTE AO RODAPÉ*/
     #rodape{
-        display: flex;
         flex-direction: row;
         width: 100%;
         height: 150px;
@@ -1078,5 +984,4 @@ body {
         width: 150px;
         height: 90px;
     }
-
  }
