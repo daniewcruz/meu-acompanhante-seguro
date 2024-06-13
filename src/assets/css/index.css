@@ -191,7 +191,7 @@ body {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     margin-bottom: -5px;
-    animation: flutuante 1.5s infinite ease-out;
+    animation: flutuante 4s infinite ease-out;
 }
 
 .titulo_risco{
@@ -204,7 +204,7 @@ body {
     height: 35px;
     font-size: 22px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    animation: flutuante 1.5s infinite ease-out;
+    animation: flutuante 4s infinite ease-out;
 }
 
 #secaoConteudo{
@@ -289,18 +289,25 @@ body {
 
 /*Área da imagem dentro de conteúdo*/
 .areaImg{
-    background-color: #c7c7c7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FBEEE5;
     border: 4px solid #58BDB2;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     width: 620px;
 }
 
+#img_conteudo1{
+    width: 300px;
+}
+
 .imagemConteudo{
     border-top-right-radius: 18px;
     border-bottom-right-radius: 18px;
     width: 612px;
-    height: 392px;
+    height: 300px;
 }
 
 /*HR que fica abaixo da barra conteúdo*/
