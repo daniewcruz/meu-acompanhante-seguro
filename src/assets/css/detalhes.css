@@ -255,22 +255,24 @@ body.darkMode #principal {
     margin-top: 200px;
     background-color: #58BDB2;
     height: 200px;
+    gap: 50px;
 }
 
-.conteudo{
-    display: flex;
-    background-color: #BDBDBD;
-    border-radius: 20px;
+a{
+    text-decoration: none;
+}
+
+.img_conteudo{
+    border: 5px solid #58BDB2;
+    background-color: #FBEEE5;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     margin-top: 20px;
     width: 360px;
     height: 500px;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.conteudo:hover{
-    background-color: #f3f2f2;
-    transition: 300ms;
+    
 }
 
 .titulo_conteudo{
@@ -279,25 +281,15 @@ body.darkMode #principal {
     align-items: center;
     background-color: #58BDB2;
     color: #313040;
-    width: 600px;
+    width: 370px;
     height: 50px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 25px;
-    margin-top: 450px;
+    margin-top: -12px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     z-index: 7px;
 }
-
-#conteudo2{
-    margin-right: 80px;
-
-}
-
-#conteudo4{
-    margin-left: 80px;
-}
-
 
 #hr_rodape{
     border: none;
@@ -352,8 +344,65 @@ body.darkMode #principal {
     width: 170px;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 380px) {
     /*ÁREA DO BANNER*/
+    #barra_inicial{
+        flex-direction: column;
+        height: 50px;
+    }
+    
+    #conteinerEsquerdo{
+        display: flex;
+        margin-top: 30px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-top: 0px;
+    }
+    
+    #titulo{
+        text-align: center;
+        font-size: 24px;
+    }
+    
+    #conteinerDireito{
+        margin-left: 40px;
+        margin-right: 20px;
+        padding-top: 0px
+    }
+    
+    #barra_acessibilidade{
+        margin-top: -10px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        width: 220px;
+        height: 40px;
+        margin-right: 20px;
+    }
+    
+    .botao_acessibilidade{
+        margin: 15px;
+        border-radius: 20px;
+        font-size: 25px;
+        width: 25px;
+        height: 25px;
+    }
+    
+    
+    .icones_tema{
+        width: 35px;
+        height: 35px;
+    }
+     
+    #botao_login{
+        display: none;
+    }
+    
+    #hr_inicio{
+        margin-bottom: 80px ;
+    }
+
     #conteinerDestaque{
         display: flex;
         flex-direction: row;
@@ -363,7 +412,7 @@ body.darkMode #principal {
         border-radius: 20px;
         width: 100%;
         height: 100%;
-        margin-bottom: 40px;
+        margin-bottom: -70px;
         margin-top: -30px;
     }
     
@@ -414,13 +463,13 @@ body.darkMode #principal {
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         width: 100%;
-        height: 500px;
+        height: 300px;
         z-index: 7;
     }
     
     #video{
         width: 100%;
-        height: 500px 
+        height: 300px 
     }
     
     #textoConteudo{
@@ -435,13 +484,13 @@ body.darkMode #principal {
         width: 100%;
         height: 600px;
         justify-content: space-evenly;
-        line-height: 35px;
+        line-height: 32px;
     
          /* Adicionando o efeito de fundo turvo */
          background-color: rgba(255, 255, 255, 0.2); /* Fundo semi-transparente */
          backdrop-filter: blur(10px); /* Aplicando o desfoque */
          -webkit-backdrop-filter: blur(10px); /* Compatibilidade com Safari */
-     }
+    }
     
     #texto{
         text-align: center;
@@ -473,51 +522,49 @@ body.darkMode #principal {
         border-radius: 40px;
         text-align: center;
         justify-content: center;
-        margin-top: -30px;
-        margin-bottom: -20px;
+        margin-top: -120px;
+        margin-bottom: -180px;
         color: #313040;
         font-size: 30px;
         font-weight: bold;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        
-        }
+        }    
+    }
 
-
-    /*ÁREA DE PRÓXIMOS CONTEÚDOS*/
     #barra_proximoConteudo{
-        background-color: transparent;
-        flex-direction: column;
-        margin-bottom: 1350px;
-        gap: 30px;
-    }
-
-    .conteudo{
         display: flex;
-        background-color: #bdbdbd;
-        border-radius: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 680px;
+        margin-bottom: 520px;
+        background-color: transparent;
+        height: 200px;
+        gap: 0px;
+    }
+
+    .img_conteudo{
+        border: 1px solid #58BDB2;
+        background-color: #FBEEE5;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
         margin-top: 20px;
-        width: 360px;
-        height: 500px;
-        text-decoration: none;
-        cursor: pointer;
+        width: 200px;
+        height: 300px;
+        
     }
-
-    #conteudo2{
-        margin-top: 1100px;
-        margin-left: 100px;
-    }
-
-    #conteudo3{
-        margin-left: 20px;
+    
+    .titulo_conteudo{
+        text-align: center;
+        width: 200px;
+        height: 40px;
+        font-size: 18px;
+        margin-top: -12px;
     }
     
     /*Ajuste da esquerda do quadrado de risco 3*/
-    #conteudo4{
-        margin-left: 20px;
-    }
-
-
-
     #hr_rodape{
         border: none;
         background-color: #58bdb2;
@@ -554,10 +601,66 @@ body.darkMode #principal {
         width: 150px;
         height: 90px;
     }
-}
 
-@media (min-width: 375px) and (max-width: 767px) {
-    /*ÁREA DO BANNER*/
+@media (min-width: 390px) and (max-width: 767px) {
+     /*ÁREA DO BANNER*/
+     #barra_inicial{
+        flex-direction: column;
+        height: 50px;
+    }
+    
+    #conteinerEsquerdo{
+        display: flex;
+        margin-top: 60px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-top: 0px;
+    }
+    
+    #titulo{
+        text-align: center;
+        font-size: 24px;
+    }
+    
+    #conteinerDireito{
+        margin-left: 40px;
+        margin-right: 20px;
+        padding-top: 0px
+    }
+    
+    #barra_acessibilidade{
+        margin-top: -10px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        width: 220px;
+        height: 40px;
+        margin-right: 20px;
+    }
+    
+    .botao_acessibilidade{
+        margin: 15px;
+        border-radius: 20px;
+        font-size: 25px;
+        width: 25px;
+        height: 25px;
+    }
+    
+    
+    .icones_tema{
+        width: 35px;
+        height: 35px;
+    }
+     
+    #botao_login{
+        display: none;
+    }
+    
+    #hr_inicio{
+        margin-bottom: 80px ;
+    }
+
     #conteinerDestaque{
         display: flex;
         flex-direction: row;
@@ -567,7 +670,7 @@ body.darkMode #principal {
         border-radius: 20px;
         width: 100%;
         height: 100%;
-        margin-bottom: 40px;
+        margin-bottom: -70px;
         margin-top: -30px;
     }
     
@@ -618,13 +721,13 @@ body.darkMode #principal {
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         width: 100%;
-        height: 500px;
+        height: 300px;
         z-index: 7;
     }
     
     #video{
         width: 100%;
-        height: 500px 
+        height: 300px 
     }
     
     #textoConteudo{
@@ -637,15 +740,15 @@ body.darkMode #principal {
         padding-top: 250px;
         margin-top: -265px;
         width: 100%;
-        height: 580px;
+        height: 600px;
         justify-content: space-evenly;
-        line-height: 35px;
+        line-height: 32px;
     
          /* Adicionando o efeito de fundo turvo */
          background-color: rgba(255, 255, 255, 0.2); /* Fundo semi-transparente */
          backdrop-filter: blur(10px); /* Aplicando o desfoque */
          -webkit-backdrop-filter: blur(10px); /* Compatibilidade com Safari */
-     }
+    }
     
     #texto{
         text-align: center;
@@ -677,49 +780,49 @@ body.darkMode #principal {
         border-radius: 40px;
         text-align: center;
         justify-content: center;
-        margin-top: -30px;
-        margin-bottom: -20px;
+        margin-top: -120px;
+        margin-bottom: -180px;
         color: #313040;
         font-size: 30px;
         font-weight: bold;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        
         }
 
+    
+    }
 
-    /*ÁREA DE PRÓXIMOS CONTEÚDOS*/
     #barra_proximoConteudo{
-        background-color: transparent;
-        flex-direction: column;
-        margin-bottom: 1350px;
-        gap: 30px;
-    }
-
-    .conteudo{
         display: flex;
-        background-color: #bdbdbd;
-        border-radius: 20px;
-        margin-top: 20px;
-        width: 360px;
-        height: 500px;
-        text-decoration: none;
-        cursor: pointer;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 800px;
+        margin-bottom: 620px;
+        background-color: transparent;
+        height: 200px;
+        gap: 0px;
     }
 
-    #conteudo2{
-        margin-top: 1100px;
-        margin-left: 100px;
-    }
-
-    #conteudo3{
-        margin-left: 20px;
+    .img_conteudo{
+        border: 2px solid #58BDB2;
+        background-color: #FBEEE5;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        margin-top: 10px;
+        width: 250px;
+        height: 380px;
+        
     }
     
-    /*Ajuste da esquerda do quadrado de risco 3*/
-    #conteudo4{
-        margin-left: 20px;
+    .titulo_conteudo{
+        text-align: center;
+        width: 253px;
+        height: 40px;
+        font-size: 18px;
+        margin-top: -12px;
     }
-
 
 
     #hr_rodape{
@@ -758,14 +861,13 @@ body.darkMode #principal {
         width: 150px;
         height: 90px;
     }
-}
 
-@media (min-width: 768px) and (max-width: 1200px){
+@media (min-width: 768px) and (max-width: 1150px){
     /*ÁREA BARRA INICIAL*/
     #conteinerEsquerdo{
         display: flex;
         margin-left: 20px;
-        margin-right: 180px;
+        margin-right: 90px;
         padding-top: 8px;
     }
     
@@ -791,7 +893,11 @@ body.darkMode #principal {
         border-radius: 30px;
         width: 250px;
         height: 50px;
-        margin-right: 20px;
+        margin-right: 0px;
+    }
+
+    #botao_login{
+        display: none;
     }
 
     /*ÁREA DO BANNER*/
@@ -811,6 +917,7 @@ body.darkMode #principal {
         margin-left: 30px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 30px;
+        line-height: 45px;
         color: #FBEEE5;
     }
     
@@ -911,8 +1018,8 @@ body.darkMode #principal {
         border-radius: 40px;
         text-align: center;
         justify-content: center;
-        margin-top: -80px;
-        margin-bottom: -20px;
+        margin-top: -10px;
+        margin-bottom: 0px;
         color: #313040;
         font-size: 35px;
         font-weight: bold;
@@ -923,34 +1030,31 @@ body.darkMode #principal {
     #barra_proximoConteudo{
         background-color: transparent;
         flex-direction: column;
-        margin-bottom: 1350px;
+        margin-top: 1100px;
+        margin-bottom: 1150px;
         gap: 30px;
         }
     
-    .conteudo{
-        display: flex;
-        background-color: #bdbdbd;
-        border-radius: 20px;
-        margin-top: 20px;
-        width: 360px;
-        height: 500px;
-        text-decoration: none;
-        cursor: pointer;
-    }
-    
-    #conteudo2{
-        margin-top: 1100px;
-        margin-left: 100px;
-    }
-    
-    #conteudo3{
-        margin-left: 20px;
-    }
+        .img_conteudo{
+            border: 3px solid #58BDB2;
+            background-color: #FBEEE5;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            margin-top: 10px;
+            width: 450px;
+            height: 650px;
+            
+        }
         
-        /*Ajuste da esquerda do quadrado de risco 3*/
-    #conteudo4{
-        margin-left: 20px;
-    }
+        .titulo_conteudo{
+            text-align: center;
+            width: 456px;
+            height: 50px;
+            font-size: 28px;
+            margin-top: -12px;
+        }
 
 
     #hr_rodape{
