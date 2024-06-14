@@ -59,3 +59,41 @@ function lightMode() {
                 })
 
 }
+
+//Popup 1
+function abrirDialog(){
+    var dialogRisco1 = document.getElementById('dialogRisco1')
+    dialogRisco1.show()
+}
+
+function fecharDialog(){
+    var dialogRisco1 = document.getElementById('dialogRisco1')
+    dialogRisco1.close()
+}
+
+//Popup 2
+function abrirDialog2(){
+    var dialogRisco2 = document.getElementById('dialogRisco2')
+    dialogRisco2.show()
+}
+
+function fecharDialog2(){
+    var dialogRisco2 = document.getElementById('dialogRisco2')
+    dialogRisco2.close()
+}
+
+//Popup 3
+function abrirDialog3(){
+    var dialogRisco3 = document.getElementById('dialogRisco3')
+    dialogRisco3.show()
+}
+
+function fecharDialog3(){
+    var dialogRisco3 = document.getElementById('dialogRisco3')
+    dialogRisco3.close()
+}
+    
+    
+  
+
+    
