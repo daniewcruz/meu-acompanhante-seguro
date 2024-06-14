@@ -75,10 +75,10 @@ function lightMode() {
     window.speechSynthesis.speak(fala);
 }*/
 
-let isReading = false;
-let utterances = []; // Array para armazenar os objetos SpeechSynthesisUtterance
-let currentUtteranceIndex = 0; // Índice da parte atual sendo lida
-let pausedAtUtterance = null; // Armazena o utterance onde a leitura foi pausada
+let estaLendo = false;
+let partesTexto = []; // Array para armazenar os objetos SpeechSynthesisUtterance
+let indiceParteAtual = 0; // Índice da parte atual sendo lida
+let pausadoEmParte = null; // Armazena o utterance onde a leitura foi pausada
 
 // Seleciona o botão de leitura e a imagem
 const botaoLer = document.getElementById('BotaoAudio');
@@ -86,9 +86,9 @@ const imgAudio = document.getElementById('imagemAudio');
 
 // Função para inicializar a leitura do texto completo
 function iniciarLeitura() {
-    // Limpa o array de utterances apenas se não estiver vazio
-    if (utterances.length > 0) {
-        utterances = [];
+    // Limpa o array de partesTexto apenas se não estiver vazio
+    if (partesTexto.length > 0) {
+        partesTexto = [];
     }
 
     // Obtém o texto do parágrafo
@@ -99,31 +99,31 @@ function iniciarLeitura() {
 
     // Cria um objeto SpeechSynthesisUtterance para cada parte
     partes.forEach(part => {
-        const utterance = new SpeechSynthesisUtterance(part);
-        utterances.push(utterance);
+        const parteTexto = new SpeechSynthesisUtterance(part);
+        partesTexto.push(parteTexto);
 
-        // Configurações adicionais do objeto utterance, se necessário
-        utterance.voice = speechSynthesis.getVoices().find(voice => voice.lang === 'pt-BR');
+        // Configurações adicionais do objeto parteTexto, se necessário
+        parteTexto.voice = speechSynthesis.getVoices().find(voice => voice.lang === 'pt-BR');
         
         // Evento para quando a leitura termina
-        utterance.onend = () => {
+        parteTexto.onend = () => {
             // Marca o índice da parte que foi lida completamente
-            currentUtteranceIndex++;
+            indiceParteAtual++;
             // Se ainda houver partes para ler, inicia a próxima parte
-            if (currentUtteranceIndex < utterances.length) {
+            if (indiceParteAtual < partesTexto.length) {
                 iniciarProximaParte();
             } else {
                 // Se todas as partes foram lidas, redefine as variáveis
-                currentUtteranceIndex = 0;
-                isReading = false;
+                indiceParteAtual = 0;
+                estaLendo = false;
                 imgAudio.src = 'assets/images/icon_audio.png';
             }
         };
 
         // Evento para lidar com erros na leitura
-        utterance.onerror = (event) => {
+        parteTexto.onerror = (event) => {
             console.error('Erro na síntese de fala:', event.error);
-            isReading = false;
+            estaLendo = false;
             imgAudio.src = 'assets/images/icon_audio.png';
         };
     });
@@ -134,33 +134,33 @@ function iniciarLeitura() {
 
 // Função para iniciar a próxima parte da leitura
 function iniciarProximaParte() {
-    if (currentUtteranceIndex < utterances.length) {
-        const utterance = utterances[currentUtteranceIndex];
-        // Se foi pausado anteriormente, retoma a partir do utterance onde foi pausado
-        if (pausedAtUtterance === utterance) {
+    if (indiceParteAtual < partesTexto.length) {
+        const parteTexto = partesTexto[indiceParteAtual];
+        // Se foi pausado anteriormente, retoma a partir do parteTexto onde foi pausado
+        if (pausadoEmParte === parteTexto) {
             speechSynthesis.resume();
         } else {
-            speechSynthesis.speak(utterance);
+            speechSynthesis.speak(parteTexto);
         }
         imgAudio.src = 'assets/images/icon_audio_stop.png'; // Imagem de parar leitura
-        isReading = true;
+        estaLendo = true;
     }
 }
 
 // Evento de clique no botão de leitura
 botaoLer.addEventListener('click', () => {
-    if (isReading) {
+    if (estaLendo) {
         // Pausa a leitura se já estiver lendo
         speechSynthesis.pause();
-        pausedAtUtterance = utterances[currentUtteranceIndex]; // Armazena o utterance onde a leitura foi pausada
+        pausadoEmParte = partesTexto[indiceParteAtual]; // Armazena o parteTexto onde a leitura foi pausada
         imgAudio.src = 'assets/images/icon_audio.png';
-        isReading = false;
+        estaLendo = false;
     } else {
         // Se a leitura estiver pausada, retoma a partir da parte atual
-        if (currentUtteranceIndex < utterances.length) {
+        if (indiceParteAtual < partesTexto.length) {
             speechSynthesis.resume();
             imgAudio.src = 'assets/images/icon_audio_stop.png'; // Imagem de parar leitura
-            isReading = true;
+            estaLendo = true;
         } else {
             // Inicia a leitura completa se não estiver lendo nada
             iniciarLeitura();
