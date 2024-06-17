@@ -656,6 +656,31 @@ body {
  }
 
 
+ #BotaoAudio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 622px;
+    
+    border-radius: 20px;
+    border: none;
+    background-color: #58BDB2;
+    width: 90px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#imagemAudio{
+    width: 40px;
+    height: 40px;
+}
+
+#BotaoAudio:hover{
+    background-color: #9cd8db;
+    transition: 300ms;
+}
+
  @media (min-width: 375px)and (max-width: 767px) {
     
     #barra_inicial{

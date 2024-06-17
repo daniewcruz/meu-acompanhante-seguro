@@ -6,8 +6,8 @@
     <title>index</title> 
     <link rel="stylesheet" href="/src/assets/css/index.css">
     <link rel="stylesheet" href="assets/css/reset.css">
+    <script src="assets/js/index.js" defer></script>
     <script src="assets/js/script.js" defer></script>
-    <script src="assets/js/index.js"></script>
 </head>
 <body>
     
@@ -60,8 +60,13 @@
                             infecções hospitalares são uma realidade e podem afetar tanto os 
                             pacientes quanto os acompanhantes. 
                         </p>
-
+                       
                         <button onclick="fecharDialog()" class="botaofecharDialog">X</button>
+
+                        <button id="BotaoAudio"><img src="assets/images/icon_audio.png" alt="" id="imagemAudio"></button>
+                        <!-- Imagem usada para o botão de parar leitura -->
+                        <img src="assets/images/icon_audio_stop.png" alt="Parar Leitura" id="imagemAudioStop" style="display:none;">
+                
                     </dialog>
                     
                     <button onclick="abrirDialog()" class="botaoAbrirDialog">
@@ -80,6 +85,11 @@
                         </p>
 
                         <button onclick="fecharDialog2()" class="botaofecharDialog">X</button>
+
+                        <button id="BotaoAudio"><img src="assets/images/icon_audio.png" alt="" id="imagemAudio"></button>
+                        <!-- Imagem usada para o botão de parar leitura -->
+                        <img src="assets/images/icon_audio_stop.png" alt="Parar Leitura" id="imagemAudioStop" style="display:none;">
+                
                     </dialog>
 
                     <button onclick="abrirDialog2()" class="botaoAbrirDialog">
@@ -99,6 +109,11 @@
                         </p>
 
                         <button onclick="fecharDialog3()" class="botaofecharDialog">X</button>
+
+                        <button id="BotaoAudio"><img src="assets/images/icon_audio.png" alt="" id="imagemAudio"></button>
+                        <!-- Imagem usada para o botão de parar leitura -->
+                        <img src="assets/images/icon_audio_stop.png" alt="Parar Leitura" id="imagemAudioStop" style="display:none;">
+                
                     </dialog>
 
                     <button onclick="abrirDialog3()" class="botaoAbrirDialog">
