@@ -104,8 +104,8 @@ let indiceParteAtual = 0; // Índice da parte atual sendo lida
 let pausadoEmParte = null; // Armazena o utterance onde a leitura foi pausada
 
 // Seleciona o botão de leitura e a imagem
-const botaoLer = document.getElementById('BotaoAudio');
-const imgAudio = document.getElementById('imagemAudio');
+const botaoLer = document.querySelectorAll('BotaoAudio');
+const imgAudio = document.querySelectorAll('imagemAudio');
 
 // Função para inicializar a leitura do texto completo
 function iniciarLeitura() {
