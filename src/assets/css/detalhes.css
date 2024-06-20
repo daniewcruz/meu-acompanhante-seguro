@@ -202,7 +202,7 @@ body.darkMode #principal {
     width: 1244px;
     height: 480px;
     justify-content: space-evenly;
-    line-height: 48px;
+    line-height: 35px;
 
      /* Adicionando o efeito de fundo turvo */
      background-color: rgba(255, 255, 255, 0.2); /* Fundo semi-transparente */
@@ -210,12 +210,12 @@ body.darkMode #principal {
      -webkit-backdrop-filter: blur(10px); /* Compatibilidade com Safari */
  }
 
-
 #texto{
     color: #313040;
     width: 1100px;
     font-size: 1.7em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: auto;
 }
 
 
