@@ -143,7 +143,7 @@ function iniciarProximaParte() {
         } else {
             speechSynthesis.speak(parteTexto);
         }
-        imgAudio.src = 'assets/images/icon_audio_stop.png'; // Imagem de parar leitura
+        imgAudio.src = 'assets/images/icon_pausa.png'; // Imagem de parar leitura
         estaLendo = true;
     }
 }
@@ -160,7 +160,7 @@ botaoLer.addEventListener('click', () => {
         // Se a leitura estiver pausada, retoma a partir da parte atual
         if (indiceParteAtual < partesTexto.length) {
             speechSynthesis.resume();
-            imgAudio.src = 'assets/images/icon_audio_stop.png'; // Imagem de parar leitura
+            imgAudio.src = 'assets/images/icon_pausa.png'; // Imagem de parar leitura
             estaLendo = true;
         } else {
             // Inicia a leitura completa se não estiver lendo nada
