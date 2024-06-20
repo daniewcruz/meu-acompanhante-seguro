@@ -55,7 +55,7 @@
                 <div>
                     <dialog class="dialogRisco" id=dialogRisco1>
                         <h1>Contaminação</h1>
-                        <p>
+                        <p id="texto">
                             É essencial estar ciente dos riscos de contaminação e infecções. As 
                             infecções hospitalares são uma realidade e podem afetar tanto os 
                             pacientes quanto os acompanhantes. 
@@ -63,10 +63,10 @@
                        
                         <button onclick="fecharDialog()" class="botaofecharDialog">X</button>
 
-                        <button class="BotaoAudio"><img src="assets/images/icon_audio.png" alt="" class="imagemAudio"></button>
+                        <button id="BotaoAudio"><img src="assets/images/icon_audio.png" alt="" class="imagemAudio"></button>
                         <!-- Imagem usada para o botão de parar leitura -->
-                        <img src="assets/images/icon_audio_stop.png" alt="Parar Leitura" class="imagemAudioStop" style="display:none;">
-                
+                        <img src="assets/images/icon_audio_stop.png" alt="Parar Leitura" id="imagemAudioStop" style="display:none;" >
+
                     </dialog>
                     
                     <button onclick="abrirDialog()" class="botaoAbrirDialog">
@@ -86,9 +86,10 @@
 
                         <button onclick="fecharDialog2()" class="botaofecharDialog">X</button>
 
-                        <button class="BotaoAudio"><img src="assets/images/icon_audio.png" alt="" class="imagemAudio"></button>
+                        <button id="BotaoAudio"><img src="assets/images/icon_audio.png" alt="" class="imagemAudio"></button>
                         <!-- Imagem usada para o botão de parar leitura -->
-                        <img src="assets/images/icon_audio_stop.png" alt="Parar Leitura" class="imagemAudioStop" style="display:none;">
+                        <img src="assets/images/icon_audio_stop.png" alt="Parar Leitura" id="imagemAudioStop" style="display:none;" >
+
                 
                     </dialog>
 
@@ -110,10 +111,10 @@
 
                         <button onclick="fecharDialog3()" class="botaofecharDialog">X</button>
 
-                        <button class="BotaoAudio"><img src="assets/images/icon_audio.png" alt="" class="imagemAudio"></button>
+                        <button id="BotaoAudio"><img src="assets/images/icon_audio.png" alt="" class="imagemAudio"></button>
                         <!-- Imagem usada para o botão de parar leitura -->
-                        <img src="assets/images/icon_audio_stop.png" alt="Parar Leitura" class="imagemAudioStop" style="display:none;">
-                
+                        <img src="assets/images/icon_audio_stop.png" alt="Parar Leitura" id="imagemAudioStop" style="display:none;" >
+
                     </dialog>
 
                     <button onclick="abrirDialog3()" class="botaoAbrirDialog">
@@ -132,6 +133,7 @@
                         os riscos de acidentes e contaminações. Melhorias necessárias incluem educação contínua, acesso facilitado aos EPIs, 
                         descarte correto e auditorias regulares.
                     </p>
+
                     <a href="detalhes.html"><button class="saibaMais">Saiba Mais</button></a>
                 </div>
 
