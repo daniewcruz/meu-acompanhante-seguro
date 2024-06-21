@@ -370,14 +370,10 @@ body {
     width: 620px;
 }
 
-#img_conteudo1{
-    width: 300px;
-}
-
 .imagemConteudo{
     border-top-right-radius: 18px;
     border-bottom-right-radius: 18px;
-    width: 612px;
+    width: 615px;
     height: 394px;
 }
 
@@ -515,7 +511,7 @@ body {
 
     #barra_atencaoRiscos{
         flex-direction: column;
-        margin-top: 420px;
+        margin-top: 440px;
         margin-bottom: 450px;
         background-color: transparent;
         gap: 40px;
