@@ -1,3 +1,16 @@
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #58BDB2;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track{
+    background: #FBEEE5;
+}
+
 #principal  {
     background-image: url('');
     background-size: contain;
