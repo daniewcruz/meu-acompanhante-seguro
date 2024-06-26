@@ -312,7 +312,6 @@ body {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     width: 620px;
-    overflow: auto;
 }
 
 /*Título do conteudo dentro de areaTexto*/
@@ -334,6 +333,7 @@ body {
     font-size: 1.5em;
     line-height: 30px ;
     margin-bottom: 5px;
+    overflow: auto;
 }
 
 /*Botão de saibaMais dentro de areaTexto*/
@@ -351,12 +351,35 @@ body {
     cursor: pointer;
 }
 
+.audioConteudo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -55px;
+    margin-left: 50px;
+    border-radius: 50px;
+    border: none;
+    background-color: #58BDB2;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.img_audioConteudo{
+    width: 40px;
+    height: 40px;
+}
+
 /*Efeito do botão saibaMais*/
 .saibaMais:hover{
     background-color: #9cd8db;
     transition: 300ms;
 }
 
+.audioConteudo:hover{
+    background-color: #9cd8db;
+    transition: 300ms;
+}
 
 /*Área da imagem dentro de conteúdo*/
 .areaImg{
@@ -654,6 +677,19 @@ body {
         font-size: 20px;
     }
 
+    .audioConteudo{
+        margin-top: -25px;
+        margin-left: -150px;
+        width: 80px;
+        height: 40px;
+        
+    }
+
+    .img_audioConteudo{
+        width: 30px;
+        height: 30px;
+    }
+
     #hr_rodape{
         margin-top: 70px;
         margin-bottom: 0px;
@@ -899,6 +935,19 @@ body {
         margin-top: 20px;
         border-radius: 15px;
         font-size: 20px;
+    }
+
+    .audioConteudo{
+        margin-top: -25px;
+        margin-left: -150px;
+        width: 120px;
+        height: 45px;
+        
+    }
+
+    .img_audioConteudo{
+        width: 40px;
+        height: 40px;
     }
 
     #hr_rodape{
@@ -1168,6 +1217,19 @@ body {
         margin-left: 150px;
         margin-top: 15px;
         font-size: 20px;
+    }
+
+    .audioConteudo{
+        margin-top: -27px;
+        margin-left: -150px;
+        width: 80px;
+        height: 40px;
+        
+    }
+
+    .img_audioConteudo{
+        width: 30px;
+        height: 30px;
     }
 
     #hr_rodape{

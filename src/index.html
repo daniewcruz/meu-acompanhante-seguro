@@ -19,8 +19,8 @@
             
             <div id="conteinerDireito">
                 <nav id="barra_acessibilidade">
-                    <button class="botao_acessibilidade" id="aumentar_fonte" class="redimensionar_fonte" title="aumentar fonte">A+</button>
-                    <button class="botao_acessibilidade" id="diminuir_fonte" class="redimensionar_fonte" title="diminuir fonte">A-</button>
+                    <button class="botao_acessibilidade" id="aumentar_fonte" class="redimensionar_fonte" title="Aumentar Fonte">A+</button>
+                    <button class="botao_acessibilidade" id="diminuir_fonte" class="redimensionar_fonte" title="Diminuir Fonte">A-</button>
                     <button class="botao_acessibilidade" onclick='lightMode()'>
                         <img src="assets/images/icon_modoClaro.png" alt="" class="icones_tema" title="Modo Claro">
                     </button>
@@ -44,7 +44,7 @@
                         <h3>Segurança e Bem-Estar</h3>
                     </div>
                     <div>
-                        <img src="assets/images/img_acompanhanteOficial.png" alt="" id="destaque_imagem">
+                        <img src="assets/images/img_acompanhanteOficial.png" alt="" id="destaque_imagem" title="Banner Principal">
                     </div>
                 </div>
             </section>
@@ -59,7 +59,7 @@
                         <p class="textoDialogo">
                             Cuidados com Alimentos e Bebidas Lave bem as mãos antes de preparar ou
                             consumir alimentos. Não consuma alimentos e bebidas do paciente, a menos que
-                            autorizado. 
+                            autorizado.
                         </p>
                        
                         <button onclick="fecharDialog()" class="botaofecharDialog">X</button>
@@ -71,7 +71,7 @@
                     </dialog>
                     
                     <button onclick="abrirDialog()" class="botaoAbrirDialog">
-                        <img src="assets/images/img_cuidadoAlimentos.jpg" alt="" class="img_riscos" id="img_risco1">
+                        <img src="assets/images/img_cuidadoAlimentos.jpg" alt="" class="img_riscos" id="img_risco1" title="Contaminação">
                         <h5 class="titulo_risco">Clique Aqui!</h5>
                     </button>
                 </div>
@@ -90,15 +90,11 @@
                         <button class="BotaoAudio"><img src="assets/images/icon_audio.png" alt="" class="imagemAudio"></button>
                         <!-- Imagem usada para o botão de parar leitura -->
                         <img src="assets/images/icon_pausa.png" alt="Parar Leitura" id="imagemAudioStop" style="display:none;" >
-
-
-
-
                 
                     </dialog>
 
                     <button onclick="abrirDialog2()" class="botaoAbrirDialog">
-                        <img src="assets/images/img_curativo.jpg" alt="" class="img_riscos" id="img_risco2">
+                        <img src="assets/images/img_curativo.jpg" alt="" class="img_riscos" id="img_risco2" title="Fluídos Corporais">
                         <h5 class="titulo_risco">Clique Aqui!</h5>
                     </button>
                 </div>
@@ -123,7 +119,7 @@
                     </dialog>
 
                     <button onclick="abrirDialog3()" class="botaoAbrirDialog">
-                        <img src="assets/images/img_pessoaAbalada.jpg" alt="" class="img_riscos" id="img_risco3">
+                        <img src="assets/images/img_pessoaAbalada.jpg" alt="" class="img_riscos" id="img_risco3" title="Riscos Emocionais">
                         <h5 class="titulo_risco">Clique Aqui!</h5>
                     </button>
                 </div>
@@ -137,13 +133,18 @@
                     <p class="paragrafo_conteudo" id="paragrafo_conteudo1">A falta de uso adequado de EPIs em instituições de saúde aumenta 
                         os riscos de acidentes e contaminações. Melhorias necessárias incluem educação contínua, acesso facilitado aos EPIs, 
                         descarte correto e auditorias regulares.
+                    
+                      
                     </p>
 
                     <a href="detalhes.html"><button class="saibaMais">Saiba Mais</button></a>
+                    <button class="audioConteudo">
+                        <img src="assets/images/icon_audio.png" alt="" class="img_audioConteudo">
+                    </button>
                 </div>
 
                 <div class="areaImg">
-                    <img src="assets/images/img_usoEPIs.jpeg" alt="" class="imagemConteudo">
+                    <img src="assets/images/img_usoEPIs.jpeg" alt="" class="imagemConteudo" title="Imagem de Uso de Equipamentos de Proteção">
                 </div>
             </main>
 
@@ -154,10 +155,13 @@
                         compartilhamento de equipamentos e não seguir protocolos de isolamento.
                     </p>
                     <a href="detalhes.html"><button class="saibaMais">Saiba Mais</button></a>
+                    <button class="audioConteudo">
+                        <img src="assets/images/icon_audio.png" alt="" class="img_audioConteudo">
+                    </button>
                 </div>
 
                 <div class="areaImg">
-                    <img src="assets/images/img_contaminaçãoCruzada.jpeg" alt="" class="imagemConteudo">
+                    <img src="assets/images/img_contaminaçãoCruzada.jpeg" alt="" class="imagemConteudo" title="Imagem de Contaminação Cruzada">
                 </div>
             </main>
 
@@ -167,10 +171,13 @@
                     <p class="paragrafo_conteudo" id="paragrafo_conteudo3">A sinalização de áreas de isolamento previnem a disseminação de doenças em 
                         hospitais. Sinalizações claras, infraestrutura adequada, comunicação eficiente e conscientização são cruciais.</p>
                     <a href="detalhes.html"><button class="saibaMais">Saiba Mais</button></a>
+                    <button class="audioConteudo">
+                        <img src="assets/images/icon_audio.png" alt="" class="img_audioConteudo">
+                    </button>
                 </div>
 
                 <div class="areaImg">
-                    <img src="assets/images/img_áreasIsolamento.jpeg" alt="" class="imagemConteudo">
+                    <img src="assets/images/img_áreasIsolamento.jpeg" alt="" class="imagemConteudo" title="Imagem de Áreas de Isolamento">
                 </div>
             </main>
 
@@ -178,13 +185,16 @@
                 <div class="areaTexto">
                     <h4 class="titulo_conteudo" id="titulo_conteudo4">Fluxo de Alimentos</h4>
                     <p class="paragrafo_conteudo" id="paragrafo_conteudo4">O fluxo irregular de alimentos em hospitais compromete a segurança alimentar e 
-                        a saúde dos pacientes. É necessário seguir normas de segurança, educar acompanhantes, implementar práticas de higiene rigorosas e 
-                        realizar inspeções regulares.</p>
+                        a saúde dos pacientes. Seguir normas de segurança, práticas de higiene rigorosas e realizar inspeções regulares é extremamente 
+                        necessário.</p>
                     <a href="detalhes.html"><button class="saibaMais">Saiba Mais</button></a>
+                    <button class="audioConteudo">
+                        <img src="assets/images/icon_audio.png" alt="" class="img_audioConteudo">
+                    </button>
                 </div>
 
                 <div class="areaImg">
-                    <img src="assets/images/img_fluxoAlimentos.jpeg" alt="" class="imagemConteudo">
+                    <img src="assets/images/img_fluxoAlimentos.jpeg" alt="" class="imagemConteudo" title="Imagem de Fluxo de Alimentos">
                 </div>
             </main>
 
@@ -210,7 +220,7 @@
 
             <nav >
                 <figure>
-                    <img id="logo-senac" src="assets/images/Img_senac.png" alt="">
+                    <img id="logo-senac" src="assets/images/Img_senac.png" alt="" title="Imagem da Logomarca do Senac">
                 </figure>
             </nav>
         </footer>
